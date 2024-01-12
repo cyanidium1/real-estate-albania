@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-[normal] m-0;
+
+  font-family: 'Futura', sans-serif;
+
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
