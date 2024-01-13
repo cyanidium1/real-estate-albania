@@ -22,22 +22,22 @@
   <body>
     <!-- Хедер -->
     <header
-      class="px-4 py-0 bg-khaki relative flex justify-between items-center"
+      class="px-4 py-0 bg-khaki relative flex justify-between items-center "
     >
       <a href="/"
         ><img
-            loading="lazy"
-            srcset="
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100   100w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200   200w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400   400w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800   800w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w,
-              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&
-            "
-            class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
+          loading="lazy"
+          srcset="
+           
+          "
+          class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
+
+           srcset="./public/images/Logo/Logo@1x.png 50w,
+          ./public/images/Logo/Logo@2x.png 100w"
+         
+  sizes="(max-width: 768px) 50px, 100px"
+  src="./public/images/Logo/Logo@2x.png"
+  alt="Description of the first image"
       /></a>
 
       <div class="top-0 right-0 z-10">
@@ -64,14 +64,19 @@
         </div>
       </div>
     </header>
-    <main>
+    <main   >
       <!-- 1 секция с кнопкой -->
-      <section class="relative text-center">
-        <img
-          class="w-full h-full object-cover"
+      <section class="relative text-center h-[884px]"  style="
+            background-image: url('./public/images/bg-palms.webp');
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+          ">
+        <!-- <img
+          class="w-full h-full object-cover m-0"
           src="./public/images/bg-palms.webp"
           alt="bg-palms"
-        />
+        /> -->
 
         <div
           class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
@@ -104,20 +109,18 @@
         </div>
       </section>
       <!-- 2 секция Почему албания -->
-      <div
-        class="h-[765px] bg-gradient-to-b from-[#9FD8D8] to-[#FDFAEC] relative z-0 px-4 py-10"
+      <section
+        class="h-[765px] bg-gradient-to-b from-[#9FD8D8] to-[#FDFAEC] relative z-0 px-4 py-10 overflow-hidden"
       >
         <div
           class="absolute w-full h-full z-0"
           style="
             background-image: url('./public/images/albania-map.webp');
             background-position: center;
-            background-size: 70%;
+            background-size: contain;
             background-repeat: no-repeat;
           "
-        >
-         
-        </div>
+        ></div>
         <h2 class="text-xl font-normal text-center mb-32">Почему АЛБАНИЯ?</h2>
         <ul class="flex flex-col">
           <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
@@ -136,103 +139,101 @@
             Благоприятный климат
           </li>
         </ul>
-      </div>
+      </section>
+
       <!-- 3 cекция План действий -->
-      <div class="h-[1200px] bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3]">
-        <!-- <span class="bg-amber-50 flex max-w-[480px] w-full flex-col items-stretch mx-auto py-7">
-        <span class="flex w-full flex-col items-stretch pl-4 pr-20">
-          <div class="justify-center text-slate-950 text-2xl font-bold leading-10">
-            Инвестиционный тур
-            <br />
-            в Албанию
-          </div>
-          <div class="justify-center text-sky-950 text-base mt-7">
-            Бесплатный ознакомительный тур по
-            <br />
-            недвижимости в Албании
-          </div>
-        </span>
-        <div class="flex w-full items-stretch justify-between gap-0 mt-10">
-          <img loading="lazy"
-            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5f83c4bd699b5e6a99d8ceafdb3d22a9c6c30389aff48e210580e78e4b8fd411?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-            class="aspect-[1.15] object-contain object-center w-full overflow-hidden grow basis-[0%]" />
-          <span
-            class="backdrop-blur-lg bg-white bg-opacity-20 flex grow basis-[0%] flex-col items-stretch ml-3.5 mt-4 px-2.5 py-2 rounded-md self-start">
-            <span class="flex items-center justify-between gap-2.5">
-              <div class="text-slate-950 text-xs whitespace-nowrap my-auto">01.</div>
-              <div class="text-slate-950 text-sm font-bold">
-                Тур до
-                <span class="font-extrabold">5</span>
-                дней
-              </div>
-            </span>
-            <div class="text-sky-950 text-xs font-medium whitespace-nowrap mt-5">
-              Экскурсии и прогулки по городу
-            </div>
-            <div class="text-sky-950 text-xs font-medium whitespace-nowrap mt-2">
-              Осмотр школ и университетов
-            </div>
-          </span>
-        </div>
-        <div class="flex w-full flex-col items-stretch mt-8 px-5">
-          <span class="flex items-center justify-between gap-2.5">
-            <div class="text-slate-950 text-xs whitespace-nowrap my-auto">02.</div>
-            <div class="text-slate-950 text-sm font-bold self-stretch grow shrink basis-auto">
-              Удобные для Вас даты
-            </div>
-          </span>
-          <span class="flex items-center gap-2.5 mt-9 self-end">
-            <div class="text-slate-950 text-xs whitespace-nowrap my-auto">03.</div>
-            <div class="text-slate-950 text-sm font-bold self-stretch grow whitespace-nowrap">
-              Встреча в аэропорту
-            </div>
-          </span>
-        </div>
-        <div class="flex w-full items-center justify-between gap-0 mt-9 px-0.5">
-          <span
-            class="backdrop-blur-lg bg-white bg-opacity-20 z-[1] flex grow basis-[0%] flex-col my-auto px-2.5 py-2 rounded-md items-start">
-            <span class="flex gap-2.5 ml-2.5 items-start">
-              <div class="text-slate-950 text-xs whitespace-nowrap">04.</div>
-              <div class="text-slate-950 text-right text-sm font-bold">
-                Трансфер аэропорт/отель/аэропорт
-              </div>
-            </span>
-            <div class="text-sky-950 text-xs self-stretch mt-5">
-              Консультация по оформлению
-              <br />
-              сделки по недвижимости
-            </div>
-          </span>
-          <img loading="lazy"
-            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ab8e93e33462d7e9b79b4556bace3703201e4101779904d97551a15ab10894a4?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-            class="aspect-[1.07] object-contain object-center w-full overflow-hidden self-stretch grow basis-[0%]" />
-        </div>
+      <div
+        class="h-[1200px]  bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3] relative px-4 py-6"
+      >
+         <div
+          class="absolute top-48 left-0 w-64 h-56 bg-cover bg-center z-0"
+          style="background-image: url('./public/bgTour1@2x.png')"
+        ></div>
         <div
-          class="flex-col overflow-hidden relative flex aspect-[1.1466666666666667] w-[258px] max-w-full mt-8 pl-16 pt-12 pb-4 self-start items-end">
-          <img loading="lazy"
-            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/119734dbc358474ac9f535b4ac2611482c51b323a0f47142a714b7c441e9d30f?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-            class="absolute h-full w-full object-cover object-center inset-0" />
-          <span
-            class="relative backdrop-blur-lg bg-white bg-opacity-20 flex w-full flex-col items-stretch mt-16 px-2.5 py-2 rounded-md">
-            <span class="flex justify-between gap-3 items-start">
-              <div class="text-slate-950 text-xs whitespace-nowrap">05.</div>
-              <div class="text-slate-950 text-right text-sm font-bold">
-                Размещение в комфортных апартаментах
-              </div>
-            </span>
-            <div class="text-sky-950 text-right text-xs leading-6 whitespace-nowrap mt-5 self-end">
-              Открытие банковского счета
+          class="absolute top-1/2 right-0 w-60 h-56 bg-cover bg-center"
+          style="background-image: url('./public/bgTour2@2x.png')"
+        ></div>
+        <div
+          class="absolute bottom-32 left-0 w-64 h-56 bg-cover bg-center"
+          style="background-image: url('./public/bgTour3@2x.png')"
+        ></div>
+   
+       
+        <h2 class="justify-center text-slate-950 text-2xl font-bold leading-10 mb-4">
+          Инвестиционный тур
+          <br />
+          в Албанию
+        </h2>
+        <h3 class="justify-center text-sky-950 text-base font-normal mb-16">
+          Бесплатный ознакомительный тур по
+          
+          недвижимости в Албании
+        </h3>
+        <ul class="flex flex-col">
+          <li class="relative z-10 w-[210px] h-[86px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md  self-end mb-40 absolute opacity-70 backdrop-blur-md">
+            <div class=" z-10">
+              <h4 class="text-slate-950 text-sm font-extrabold mb-4 opacity-100 z-30 backdrop-blur-0  ">
+                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
+                  >01. </span
+                >Тур до 5 дней
+              </h4>
+              <p class="text-sky-950 text-xs font-medium whitespace-nowrap mb-2">Экскурсии и прогулки по городу</p>
+              <p class="text-sky-950 text-xs font-medium whitespace-nowrap ">Осмотр школ и университетов</p>
             </div>
-          </span>
-        </div>
-        <div class="text-slate-950 text-right text-sm font-bold ml-4 mt-8">
-          Осмотр лучших объектов недвижимости под ваши цели
-        </div>
-        <div class="text-sky-950 text-right text-xs ml-4 mt-5">Услуги адвоката</div>
-        <div class="text-sky-950 text-right text-xs ml-4 mt-2">
-          Получение вида на жительство
-        </div>
-      </span> -->
+          </li>
+          <li class="relative z-10 w-fit  self-start mb-8">
+            <div>
+              
+                <h4 class="text-slate-950 text-sm font-bold">
+                  <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
+                    >02. </span
+                  >Удобные для Вас даты
+                </h4>
+                
+              
+            </div>
+          </li>
+          <li class="relative z-10 w-fit self-end mb-32">
+           <h4 class="text-slate-950 text-sm font-bold mb-4">
+                  <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
+                    >03. </span
+                  >Встреча в аэропорту
+                </h4>
+          </li>
+          <li class="relative self-start z-10 w-[196px] h-[94px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70 blur-lg mb-48">
+         
+           <h4 class="text-slate-950 text-sm font-bold text-right">
+                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
+                  >04. </span
+                >Трансфер аэропорт/отель/аэропорт
+              </h4>
+              <p class="text-sky-950 text-xs self-stretch mt-5">Консультация по оформлению
+ сделки по недвижимости</p>
+             
+          </li>
+          <li class="relative flex justify-between flex-col z-10 self-end w-[248px] h-[88px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70 backdrop-filter backdrop-blur-md mb-12">
+            <h4 class="text-slate-950 text-sm font-bold text-right mb-4">
+                <span class="text-slate-950 text-xs whitespace-nowrap my-auto "
+                  >05. </span
+                >Размещение в комфортных апартаментах
+              </h4>
+              <p class="text-sky-950 text-xs self-stretch  text-right">Открытие банковского счета</p>
+          </li>
+           <li class="relative z-10 w-fit">
+            <h4 class="text-slate-950 text-sm font-bold mb-4" >
+                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
+                  >06. </span
+                >Осмотр лучших объектов <br/>недвижимости под ваши цели
+              </h4>
+              <p class="text-sky-950 text-xs self-stretch mb-2">Услуги адвоката</p>
+              <p class="text-sky-950 text-xs self-stretch ">Получение вида на жительство</p>
+          </li>
+        </ul>
+          
+     
+        
+         
+           
       </div>
       <!-- 4 секция Форма заявки -->
       <div class="h-[680px] relative">
@@ -357,7 +358,7 @@
         <img
           src="./public/images/bg-footer.webp"
           alt="bg-palms"
-          class="w-full h-full object-cover"
+          class=" h-full object-cover"
           style="object-position: center top"
         />
         <!-- Градиент -->

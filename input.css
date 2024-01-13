@@ -6,6 +6,8 @@ body {
   @apply leading-[normal] m-0;
 
   font-family: 'Rokkitt', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 
 }
 ul{padding: 0;}
