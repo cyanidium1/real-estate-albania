@@ -39,7 +39,7 @@
   alt="Logo"
       /></a>
 
-      <div class="top-0 right-0 z-10">
+      <!-- <div class="top-0 right-0 z-10">
         <div class="relative">
           <select
             id="language-select"
@@ -48,18 +48,19 @@
             <option value="en">English</option>
             <option value="pl">Polski</option>
             <option value="ru">Русский</option>
-          </select>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
-          >
-            <svg
-              class="w-4 h-4 fill-bl text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path d="M7 10l5 5 5-5z" />
-            </svg>
-          </div>
+          </select> -->
+          
+           <div class="inset-y-0 right-0 flex items-center">
+      <label for="currency" class="sr-only">Currency</label>
+    
+      <select id="currency" name="currency" class="h-fit rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm relative" > 
+        <option class="w-full h-full " value="eng" style="background-image: url(./public/images/Logo/Logo@1x.png);">ENG
+        </option>
+        <option value="pl" data-icon="./public/pl.svg">PL</option>
+        <option value="ru" data-icon="./public/ru.svg">RU</option>
+      </select>
+    </div> 
+          
         </div>
       </div>
     </header>
@@ -112,11 +113,11 @@
         class="h-[765px] bg-gradient-to-b from-[#9FD8D8] to-[#FDFAEC] relative z-0 px-4 py-10 overflow-hidden"
       >
         <div
-          class="absolute w-full h-full z-0 "
+          class="absolute  w-full h-full z-0 "
           style="
             background-image: url('./public/images/albania-map.webp');
-            background-position:70%;
-            background-size: contain;
+            background-position:center;
+            background-size:80%;
             background-repeat: no-repeat;
           "
         ></div>
