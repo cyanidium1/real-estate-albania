@@ -1,35 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B&S Trust</title>
+    <link href="/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B&S Trust</title>
-  <link rel="stylesheet" href="/output.css">
-  <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <!-- Хедер -->
+    <header
+      class="px-4 py-0 bg-khaki relative flex justify-between items-center"
+    >
+      <a href="/"
+        ><img
+            loading="lazy"
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&
+            "
+            class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
+      /></a>
 
-<body>
-  <!-- Хедер -->
-  <header class="h-16 bg-khaki">
-
-  </header>
-  <main>
-    <!-- 1 секция с кнопкой -->
-    <div class="h-[680px]">
-      <img src="./public/images/bg-palms.webp" alt="bg-palms" style="width: 100%;" height="100%">
-    </div>
-    <!-- 2 секция Почему албания -->
-    <div class="bg-gradient-to-b from-[#9FD8D8]  to-[#FDFAEC] h-[760px] relative">
-      <div class="absolute w-full h-full flex justify-center items-center">
-        <img src="./public/images/albania-map.webp" alt="alb-map" style="width: 70%;" height="70%">
+      <div class="top-0 right-0 z-10">
+        <div class="relative">
+          <select
+            id="language-select"
+            class="bg-white text-black px-2 py-1 rounded-md appearance-none"
+          >
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+            <option value="ru">Русский</option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 fill-bl text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M7 10l5 5 5-5z" />
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- 3 cекция План действий -->
-    <div class="h-[1200px] bg-gradient-to-b from-[#FDFAEC]  to-[#7ba5d3]">
+    </header>
+    <main>
+      <!-- 1 секция с кнопкой -->
+      <section class="relative text-center">
+        <img
+          class="w-full h-full object-cover"
+          src="./public/images/bg-palms.webp"
+          alt="bg-palms"
+        />
 
-
-      <span class="bg-amber-50 flex max-w-[480px] w-full flex-col items-stretch mx-auto py-7">
+        <div
+          class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
+        >
+          <h2
+            class="justify-end text-white text-center text-2xl font-bold mb-4"
+          >
+            НЕДВИЖИМОСТЬ В АЛБАНИИ
+          </h2>
+          <p class="text-white text-center text-base self-stretch w-full mb-8">
+            Приобретите недвижимость у моря
+            <br />
+            и получите Вид на жительство!
+          </p>
+          <button
+            type="button"
+            class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-stretch rounded bg-sky-950 self-stretch mb-10 px-3.5 py-4"
+          >
+            Получить подбор недвижимости
+          </button>
+          <ul class="font-normal text-xs">
+            <li class="mb-2 text-white">
+              * помощь в подборе и покупке недвижимости
+            </li>
+            <li class="text-white mb-2">* ремонт и меблировка</li>
+            <li class="text-white mb-2">
+              * аренда и управление вашей недвижимостью
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 2 секция Почему албания -->
+      <div
+        class="h-[765px] bg-gradient-to-b from-[#9FD8D8] to-[#FDFAEC] relative z-0 px-4 py-10"
+      >
+        <div
+          class="absolute w-full h-full z-0"
+          style="
+            background-image: url('./public/images/albania-map.webp');
+            background-position: center;
+            background-size: 70%;
+            background-repeat: no-repeat;
+          "
+        >
+         
+        </div>
+        <h2 class="text-xl font-normal text-center mb-32">Почему АЛБАНИЯ?</h2>
+        <ul class="flex flex-col">
+          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+            Самая дешевая недвижимость на Адриатике
+          </li>
+          <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+            Безопасная страна
+          </li>
+          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+            300 дней в году солнце
+          </li>
+          <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+            Экологичные продукты питания
+          </li>
+          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+            Благоприятный климат
+          </li>
+        </ul>
+      </div>
+      <!-- 3 cекция План действий -->
+      <div class="h-[1200px] bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3]">
+        <!-- <span class="bg-amber-50 flex max-w-[480px] w-full flex-col items-stretch mx-auto py-7">
         <span class="flex w-full flex-col items-stretch pl-4 pr-20">
           <div class="justify-center text-slate-950 text-2xl font-bold leading-10">
             Инвестиционный тур
@@ -122,106 +232,165 @@
         <div class="text-sky-950 text-right text-xs ml-4 mt-2">
           Получение вида на жительство
         </div>
-      </span>
-
-
-
-    </div>
-    <!-- 4 секция Форма заявки -->
-    <div class="h-[680px] relative">
-      <img src="./public/images/bg-houses.webp" alt="bg-palms" class="w-full h-full object-cover"
-        style="object-position: center top;">
-      <!-- Градиент -->
-      <div class="absolute top-[-1px] inset-0 bg-gradient-to-b from-[#7ba5d3] to-transparent h-1/4"></div>
-      <div class="absolute bottom-[-1px]  w-full bg-gradient-to-b from-transparent to-[#FDFAEC]  h-1/4"></div>
-      <!-- Контент -->
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
-
-        <h2 class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6" aria-label="Form Title"> Форма
-          заявки </h2>
+      </span> -->
+      </div>
+      <!-- 4 секция Форма заявки -->
+      <div class="h-[680px] relative">
+        <img
+          src="./public/images/bg-houses.webp"
+          alt="bg-palms"
+          class="w-full h-full object-cover"
+          style="object-position: center top"
+        />
+        <!-- Градиент -->
         <div
-          class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl">
-          <p class="text-slate-950 text-center text-sm font-medium" aria-label="Form Description"> Оставьте заявку
-            и наш эксперт свяжется с Вами
-          </p>
-          <div
-            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
-            <input type="text" placeholder="Ваше имя" class="input-field w-full" aria-label="Your Name" />
-          </div>
-          <div
-            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
-            <input type="tel" placeholder="Телефон" class="input-field w-full" aria-label="Your Name" />
-          </div>
-          <button
-            class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4"
-            aria-label="Submit Form"> Отрпавить заявку </button>
-        </div>
-      </div>
-
-    </div>
-    <!-- 5 секция Контакты -->
-    <div class="h-[300px] bg-[#FDFAEC] relative py-4">
-      <div class="w-full flex flex-col justify-center items-center">
-        <img loading="lazy"
-          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-          class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full" />
-        <p class="text-slate-950 text-center text-sm font-bold mt-4">Недвижимость</p>
-        <p class="text-slate-950 text-center text-sm font-bold mt-2">Инвестиционный Тур
-        </p>
-        <p class="text-slate-950 text-center text-sm font-bold mt-2">Районы Албании</p>
-        <div class="items-stretch flex justify-between mt-2 px-5">
-          <div class="items-stretch flex justify-between gap-2 mr-4">
-            <img loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bd8575e317aed2307979b3764b7b046a235bc538392ca7a00c3d66378ea6922?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-              class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
-            <p class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">+380 93 512 85 47</p>
-          </div>
-          <img loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8a2bfb362b575a78c9ab635152ad09d769f949d466968dd5c4bb42d34622f83?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-            class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
-          <p class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">Durrës, Albania</p>
-        </div>
-      </div>
-    </div>
-
-  </main>
-  <!-- Футер -->
-  <footer>
-    <div class="h-[680px] relative">
-      <!-- Бекграунд -->
-      <img src="./public/images/bg-footer.webp" alt="bg-palms" class="w-full h-full object-cover"
-        style="object-position: center top;">
-      <!-- Градиент -->
-      <div class="top-[-1px] absolute inset-0 bg-gradient-to-b from-[#FDFAEC] to-transparent h-1/4"></div>
-      <!-- Контент -->
-      <div class="absolute top-0 flex justify-center items-center w-full h-full">
+          class="absolute top-[-1px] inset-0 bg-gradient-to-b from-[#7ba5d3] to-transparent h-1/4"
+        ></div>
         <div
-          class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-10 py-10 rounded-md items-center max-w-72">
-          <p class="text-slate-950 text-center text-base font-medium">
-            Подпишитесь и будьте в курсе актуальных событий в мире недвижимости Албании!
-          </p>
-          <div class="items-stretch flex justify-between mt-8">
-
+          class="absolute bottom-[-1px] w-full bg-gradient-to-b from-transparent to-[#FDFAEC] h-1/4"
+        ></div>
+        <!-- Контент -->
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6"
+            aria-label="Form Title"
+          >
+            Форма заявки
+          </h2>
+          <div
+            class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl"
+          >
+            <p
+              class="text-slate-950 text-center text-sm font-medium"
+              aria-label="Form Description"
+            >
+              Оставьте заявку и наш эксперт свяжется с Вами
+            </p>
+            <div
+              class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start"
+            >
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                class="input-field w-full"
+                aria-label="Your Name"
+              />
+            </div>
+            <div
+              class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start"
+            >
+              <input
+                type="tel"
+                placeholder="Телефон"
+                class="input-field w-full"
+                aria-label="Your Name"
+              />
+            </div>
+            <button
+              class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4"
+              aria-label="Submit Form"
+            >
+              Отрпавить заявку
+            </button>
           </div>
-          <ul class="text-slate-950 text-sm self-center list-disc mt-8">
-            <li>Новости рынка недвижимости Албании</li>
-            <li>Оповещения о новых стартах продаж</li>
-            <li>Доступ к эксклюзивным объектам на этапе pre-sale</li>
-            <li>Инвестиционные предложения</li>
-          </ul>
-          <a href="..."
-            class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5">
-            Подписаться на YouTube
-          </a>
         </div>
       </div>
-
-    </div>
-
-
-    </div>
-  </footer>
-</body>
-
+      <!-- 5 секция Контакты -->
+      <div class="h-[300px] bg-[#FDFAEC] relative py-4">
+        <div class="w-full flex flex-col justify-center items-center">
+          <img
+            loading="lazy"
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/d29509d303de1d49b91e06d3bf820d40fd1c402a84b2f40d97142b035be741b9?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&
+            "
+            class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
+          />
+          <p class="text-slate-950 text-center text-sm font-bold mt-4">
+            Недвижимость
+          </p>
+          <p class="text-slate-950 text-center text-sm font-bold mt-2">
+            Инвестиционный Тур
+          </p>
+          <p class="text-slate-950 text-center text-sm font-bold mt-2">
+            Районы Албании
+          </p>
+          <div class="items-stretch flex justify-between mt-2 px-5">
+            <div class="items-stretch flex justify-between gap-2 mr-4">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bd8575e317aed2307979b3764b7b046a235bc538392ca7a00c3d66378ea6922?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
+                class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full"
+              />
+              <p
+                class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap"
+              >
+                +380 93 512 85 47
+              </p>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8a2bfb362b575a78c9ab635152ad09d769f949d466968dd5c4bb42d34622f83?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
+              class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full"
+            />
+            <p
+              class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap"
+            >
+              Durrës, Albania
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Футер -->
+    <footer>
+      <div class="h-[680px] relative">
+        <!-- Бекграунд -->
+        <img
+          src="./public/images/bg-footer.webp"
+          alt="bg-palms"
+          class="w-full h-full object-cover"
+          style="object-position: center top"
+        />
+        <!-- Градиент -->
+        <div
+          class="top-[-1px] absolute inset-0 bg-gradient-to-b from-[#FDFAEC] to-transparent h-1/4"
+        ></div>
+        <!-- Контент -->
+        <div
+          class="absolute top-0 flex justify-center items-center w-full h-full"
+        >
+          <div
+            class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-10 py-10 rounded-md items-center max-w-72"
+          >
+            <p class="text-slate-950 text-center text-base font-medium">
+              Подпишитесь и будьте в курсе актуальных событий в мире
+              недвижимости Албании!
+            </p>
+            <div class="items-stretch flex justify-between mt-8"></div>
+            <ul class="text-slate-950 text-sm self-center list-disc mt-8">
+              <li>Новости рынка недвижимости Албании</li>
+              <li>Оповещения о новых стартах продаж</li>
+              <li>Доступ к эксклюзивным объектам на этапе pre-sale</li>
+              <li>Инвестиционные предложения</li>
+            </ul>
+            <a
+              href="..."
+              class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5"
+            >
+              Подписаться на YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

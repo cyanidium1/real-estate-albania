@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         ivory: "#fdfaec",
         text2: "#002d4f",
-        "nero": "#fff",
+        nero: "#fff",
         text: "#000e18",
         gray: "rgba(255, 255, 255, 0.16)",
         khaki: "#e8d380",
@@ -17,6 +17,9 @@ module.exports = {
         inter: "Inter",
         inherit: "inherit",
         arial: "Arial",
+      },
+      backgroundImage: {
+        map: "url('./public/images/albania-map.webp')",
       },
     },
     fontSize: {
