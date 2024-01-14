@@ -1,432 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B&S Trust</title>
-    <link href="/output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Хедер -->
-    <header
-      class="px-4 py-0 bg-khaki relative flex justify-between items-center "
-    >
-      <a href="/"
-        ><img class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
-          loading="lazy"               
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B&S Trust</title>
+  <link href="/output.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
 
-           srcset="./public/images/Logo/Logo@1x.png 50w,
-          ./public/images/Logo/Logo@2x.png 100w, 
-          ./public/images/Logo/Logo68px@1x.png 68w, 
-          ./public/images/Logo/Logo136px@2x.png 136w,
-          "
-         
-  sizes="(max-width: 768px) 50px, 100px"
-  src="./public/images/Logo/Logo@2x.png"
-  alt="Logo"
-      /></a>
+<body>
+  <!-- Хедер -->
+  <header class="px-4 py-0 bg-khaki relative flex justify-between items-center">
+    <a href="/">
+      <img class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
+        loading="lazy" srcset="./public/images/Logo/Logo@1x.png 50w,
+            ./public/images/Logo/Logo@2x.png 100w, 
+            ./public/images/Logo/Logo68px@1x.png 68w, 
+            ./public/images/Logo/Logo136px@2x.png 136w" sizes="(max-width: 768px) 50px, 100px"
+        src="./public/images/Logo/Logo@2x.png" alt="Logo" />
+    </a>
 
-           <div class="inset-y-0 right-0 flex items-center">
+    <div class="inset-y-0 right-0 flex items-center">
       <label for="currency" class="sr-only">Currency</label>
-    
-      <select id="currency" name="currency" class="h-fit rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm relative" > 
-        <option class="w-full h-full " value="eng" style="background-image: url(./public/images/Logo/Logo@1x.png);">ENG
-        </option>
+      <select id="currency" name="currency"
+        class="h-fit rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm relative">
+        <option class="w-full h-full" value="eng" style="background-image: url(./public/images/Logo/Logo@1x.png);">
+          ENG </option>
         <option value="pl" data-icon="./public/pl.svg">PL</option>
         <option value="ru" data-icon="./public/ru.svg">RU</option>
       </select>
-    </div> 
-          
-        </div>
-      </div>
-    </header>
-    <main   >
-      <!-- 1 секция с кнопкой -->
-      <section class="relative text-center h-[884px]"  style="
-            background-image: url('./public/images/bg-palms.webp');
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-          ">
-     
+    </div>
+  </header>
 
-        <div
-          class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
-        >
-          <h2
-            class="justify-end text-white text-center text-2xl font-bold mb-4"
-          >
-            НЕДВИЖИМОСТЬ В АЛБАНИИ
-          </h2>
-          <p class="text-white text-center text-base self-stretch w-full mb-8">
-            Приобретите недвижимость у моря
-            <br />
-            и получите Вид на жительство!
-          </p>
-          <a
-            href="/real-estate-albania.html"
-
-            class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-stretch rounded bg-sky-950 self-stretch mb-10 px-3.5 py-4"
-          >
-            Получить подбор недвижимости
-        </a>
-          <ul class="font-normal text-xs">
-            <li class="mb-2 text-white">
-              * помощь в подборе и покупке недвижимости
-            </li>
-            <li class="text-white mb-2">* ремонт и меблировка</li>
-            <li class="text-white mb-2">
-              * аренда и управление вашей недвижимостью
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- 2 секция Почему албания -->
-      <section
-        class="h-[765px]  relative z-0 px-4 py-10 overflow-hidden" style="
-            background-image:  url('./public/images/albania-map.webp'), linear-gradient(to bottom, #9FD8D8, #FDFAEC);
-            background-position:  center 112px, center;
-            background-size: contain, cover  ;
-            background-repeat: no-repeat;
-          "
-      >
-        <div
-          class="absolute  w-full h-full z-0 "
-          
-        ></div>
-        <h2 class="text-xl font-normal text-center mb-32 z-20">Почему АЛБАНИЯ?</h2>
-        <ul class="flex flex-col">
-          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
-            Самая дешевая недвижимость на Адриатике
-          </li>
-          <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
-            Безопасная страна
-          </li>
-          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
-            300 дней в году солнце
-          </li>
-          <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
-            Экологичные продукты питания
-          </li>
-          <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
-            Благоприятный климат
-          </li>
-        </ul>
-      </section>
-
-      <!-- 3 cекция План действий -->
+  <main>
+    <!-- 1 секция с кнопкой -->
+    <section class="relative text-center h-[884px]" style="background-image: url('./public/images/bg-palms.webp');
+              background-position: center;
+              background-size:cover;
+              background-repeat: no-repeat;">
       <div
-        class="h-[1200px]  bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3] relative px-4 py-6"
-      >
-         <div
-          class="absolute top-48 left-0 w-64 h-56 bg-cover bg-center z-0"
-          style="background-image: url('./public/bgTour1@2x.png')"
-        ></div>
-        <div
-          class="absolute top-1/2 right-0 w-60 h-56 bg-cover bg-center"
-          style="background-image: url('./public/bgTour2@2x.png')"
-        ></div>
-        <div
-          class="absolute bottom-32 left-0 w-64 h-56 bg-cover bg-center"
-          style="background-image: url('./public/bgTour3@2x.png')"
-        ></div>
-   
-       
-        <h2 class="justify-center text-slate-950 text-2xl font-bold leading-10 mb-4">
-          Инвестиционный тур
-          <br />
-          в Албанию
+        class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
+        <h2 id="title1" class="justify-end text-white text-center text-2xl font-bold mb-4">
+          НЕДВИЖИМОСТЬ В АЛБАНИИ
         </h2>
-        <h3 class="justify-center text-sky-950 text-base font-normal mb-16">
-          Бесплатный ознакомительный тур по
-          
-          недвижимости в Албании
-        </h3>
-        <ul class="flex flex-col">
-          <li class="relative z-10 w-[210px] h-[86px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md  self-end mb-40  opacity-70 backdrop-blur-md">
-            <div class="  z-10">
-              <h4 class="text-slate-950 text-sm font-extrabold mb-4 opacity-100 z-30 backdrop-blur-0  ">
-                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
-                  >01. </span
-                >Тур до 5 дней
-              </h4>
-              <p class="text-sky-950 text-xs font-medium whitespace-nowrap mb-2">Экскурсии и прогулки по городу</p>
-              <p class="text-sky-950 text-xs font-medium whitespace-nowrap ">Осмотр школ и университетов</p>
-            </div>
-          </li>
-          <li class="relative z-10 w-fit  self-start mb-8">
-            <div>
-              
-                <h4 class="text-slate-950 text-sm font-bold">
-                  <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
-                    >02. </span
-                  >Удобные для Вас даты
-                </h4>
-                
-              
-            </div>
-          </li>
-          <li class="relative z-10 w-fit self-end mb-32">
-           <h4 class="text-slate-950 text-sm font-bold mb-4">
-                  <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
-                    >03. </span
-                  >Встреча в аэропорту
-                </h4>
-          </li>
-          <li class="relative self-start z-10 w-[196px] h-[94px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70  backdrop-blur-md  mb-48">
- 
-           <h4 class="text-slate-950 text-sm font-bold text-right ">
-                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
-                  >04. </span
-                >Трансфер аэропорт/отель/аэропорт
-              </h4>
-              <p class="text-sky-950 text-xs self-stretch mt-5">Консультация по оформлению
- сделки по недвижимости</p>
-             
-          </li>
-          <li class="relative flex justify-between flex-col z-10 self-end w-[248px] h-[88px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70  backdrop-blur-md mb-12"><div class="absolute">
-<h4 class="text-slate-950 text-sm font-bold text-right mb-4">
-                <span class="text-slate-950 text-xs whitespace-nowrap my-auto "
-                  >05. </span
-                >Размещение в комфортных апартаментах
-              </h4>
-              <p class="text-sky-950 text-xs self-stretch  text-right">Открытие банковского счета</p>
-          </div>
-            
-          </li>
-           <li class="relative z-10 w-fit">
-            <h4 class="text-slate-950 text-sm font-bold mb-4" >
-                <span class="text-slate-950 text-xs whitespace-nowrap my-auto"
-                  >06. </span
-                >Осмотр лучших объектов <br/>недвижимости под ваши цели
-              </h4>
-              <p class="text-sky-950 text-xs self-stretch mb-2">Услуги адвоката</p>
-              <p class="text-sky-950 text-xs self-stretch ">Получение вида на жительство</p>
-          </li>
+        <p id="description1" class="text-white text-center text-base self-stretch w-full mb-8">
+          Приобретите недвижимость у моря
+          <br />
+          и получите Вид на жительство!
+        </p>
+        <a href="/real-estate-albania.html" id="button1"
+          class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-stretch rounded bg-sky-950 self-stretch mb-10 px-3.5 py-4">
+          Получить подбор недвижимости
+        </a>
+        <ul id="items1" class="font-normal text-xs">
+          <li class="mb-2 text-white">* помощь в подборе и покупке недвижимости</li>
+          <li class="text-white mb-2">* ремонт и меблировка</li>
+          <li class="text-white mb-2">* аренда и управление вашей недвижимостью</li>
         </ul>
-          
-     
-        
-         
-           
       </div>
-      <!-- 4 секция Форма заявки -->
-      <div class="h-[680px] relative">
-        <img
-          src="./public/images/bg-houses.webp"
-          alt="bg-palms"
-          class="w-full h-full object-cover"
-          style="object-position: center top"
-        />
-        <!-- Градиент -->
-        <div
-          class="absolute top-[-1px] inset-0 bg-gradient-to-b from-[#7ba5d3] to-transparent h-1/4"
-        ></div>
-        <div
-          class="absolute bottom-[-1px] w-full bg-gradient-to-b from-transparent to-[#FDFAEC] h-1/4"
-        ></div>
-        <!-- Контент -->
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center"
-        >
-          <h2
-            class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6"
-            aria-label="Form Title"
-          >
-            Форма заявки
-          </h2>
-          <div
-            class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl"
-          >
-            <p
-              class="text-slate-950 text-center text-sm font-medium"
-              aria-label="Form Description"
-            >
-              Оставьте заявку и наш эксперт свяжется с Вами
-            </p>
-            <div
-              class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start"
-            >
-              <input
-                type="text"
-                placeholder="Ваше имя"
-                class="input-field w-full"
-                aria-label="Your Name"
-              />
-            </div>
-            <div
-              class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start"
-            >
-              <input
-                type="tel"
-                placeholder="Телефон"
-                class="input-field w-full"
-                aria-label="Your Name"
-              />
-            </div>
-            <button
-              class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4"
-              aria-label="Submit Form"
-            >
-              Отправить заявку
-            </button>
+    </section>
+
+    <!-- 2 секция Почему албания -->
+    <section class="h-[765px] relative z-0 px-4 py-10 overflow-hidden" style="background-image:  url('./public/images/albania-map.webp'), linear-gradient(to bottom, #9FD8D8, #FDFAEC);
+              background-position:  center 112px, center;
+              background-size: contain, cover  ;
+              background-repeat: no-repeat;">
+      <div class="absolute  w-full h-full z-0 "></div>
+      <h2 class="text-xl font-normal text-center mb-32 z-20">Почему АЛБАНИЯ?</h2>
+      <ul class="flex flex-col">
+        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+          Самая дешевая недвижимость на Адриатике
+        </li>
+        <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+          Безопасная страна
+        </li>
+        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+          300 дней в году солнце
+        </li>
+        <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+          Экологичные продукты питания
+        </li>
+        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+          Благоприятный климат
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3 cекция План действий -->
+    <div class="h-[1200px]  bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3] relative px-4 py-6">
+      <div class="absolute top-48 left-0 w-64 h-56 bg-cover bg-center z-0"
+        style="background-image: url('./public/bgTour1@2x.png')"></div>
+      <div class="absolute top-1/2 right-0 w-60 h-56 bg-cover bg-center"
+        style="background-image: url('./public/bgTour2@2x.png')"></div>
+      <div class="absolute bottom-32 left-0 w-64 h-56 bg-cover bg-center"
+        style="background-image: url('./public/bgTour3@2x.png')"></div>
+
+
+      <h2 class="justify-center text-slate-950 text-2xl font-bold leading-10 mb-4">
+        Инвестиционный тур
+        <br />
+        в Албанию
+      </h2>
+      <h3 class="justify-center text-sky-950 text-base font-normal mb-16">
+        Бесплатный ознакомительный тур по
+
+        недвижимости в Албании
+      </h3>
+      <ul class="flex flex-col">
+        <li
+          class="relative z-10 w-[210px] h-[86px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md  self-end mb-40  opacity-70 backdrop-blur-md">
+          <div class="  z-10">
+            <h4 class="text-slate-950 text-sm font-extrabold mb-4 opacity-100 z-30 backdrop-blur-0  ">
+              <span class="text-slate-950 text-xs whitespace-nowrap my-auto">01. </span>Тур до 5 дней
+            </h4>
+            <p class="text-sky-950 text-xs font-medium whitespace-nowrap mb-2">Экскурсии и прогулки по городу</p>
+            <p class="text-sky-950 text-xs font-medium whitespace-nowrap ">Осмотр школ и университетов</p>
           </div>
+        </li>
+        <li class="relative z-10 w-fit  self-start mb-8">
+          <div>
+
+            <h4 class="text-slate-950 text-sm font-bold">
+              <span class="text-slate-950 text-xs whitespace-nowrap my-auto">02. </span>Удобные для Вас даты
+            </h4>
+
+
+          </div>
+        </li>
+        <li class="relative z-10 w-fit self-end mb-32">
+          <h4 class="text-slate-950 text-sm font-bold mb-4">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">03. </span>Встреча в аэропорту
+          </h4>
+        </li>
+        <li
+          class="relative self-start z-10 w-[196px] h-[94px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70  backdrop-blur-md  mb-48">
+
+          <h4 class="text-slate-950 text-sm font-bold text-right ">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">04. </span>Трансфер аэропорт/отель/аэропорт
+          </h4>
+          <p class="text-sky-950 text-xs self-stretch mt-5">Консультация по оформлению
+            сделки по недвижимости</p>
+
+        </li>
+        <li
+          class="relative flex justify-between flex-col z-10 self-end w-[248px] h-[88px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md opacity-70  backdrop-blur-md mb-12">
+          <div class="absolute">
+            <h4 class="text-slate-950 text-sm font-bold text-right mb-4">
+              <span class="text-slate-950 text-xs whitespace-nowrap my-auto ">05. </span>Размещение в комфортных
+              апартаментах
+            </h4>
+            <p class="text-sky-950 text-xs self-stretch  text-right">Открытие банковского счета</p>
+          </div>
+
+        </li>
+        <li class="relative z-10 w-fit">
+          <h4 class="text-slate-950 text-sm font-bold mb-4">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">06. </span>Осмотр лучших объектов
+            <br />недвижимости под ваши цели
+          </h4>
+          <p class="text-sky-950 text-xs self-stretch mb-2">Услуги адвоката</p>
+          <p class="text-sky-950 text-xs self-stretch ">Получение вида на жительство</p>
+        </li>
+      </ul>
+
+
+
+
+
+    </div>
+    <!-- 4 секция Форма заявки -->
+    <div class="h-[680px] relative">
+      <img src="./public/images/bg-houses.webp" alt="bg-palms" class="w-full h-full object-cover"
+        style="object-position: center top" />
+      <!-- Градиент -->
+      <div class="absolute top-[-1px] inset-0 bg-gradient-to-b from-[#7ba5d3] to-transparent h-1/4"></div>
+      <div class="absolute bottom-[-1px] w-full bg-gradient-to-b from-transparent to-[#FDFAEC] h-1/4"></div>
+      <!-- Контент -->
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
+        <h2 class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6" aria-label="Form Title">
+          Форма заявки
+        </h2>
+        <div
+          class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl">
+          <p class="text-slate-950 text-center text-sm font-medium" aria-label="Form Description">
+            Оставьте заявку и наш эксперт свяжется с Вами
+          </p>
+          <div
+            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
+            <input type="text" placeholder="Ваше имя" class="input-field w-full" aria-label="Your Name" />
+          </div>
+          <div
+            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
+            <input type="tel" placeholder="Телефон" class="input-field w-full" aria-label="Your Name" />
+          </div>
+          <button
+            class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4"
+            aria-label="Submit Form">
+            Отправить заявку
+          </button>
         </div>
       </div>
-      <!-- 5 секция Контакты -->
-      <div class="h-[300px] bg-[#FDFAEC] relative py-4">
-        <div class="w-full flex flex-col justify-center items-center">
-         <img class="aspect-[0.83] object-contain object-center w-[136px] overflow-hidden self-center max-w-full"
-          loading="lazy"               
-
-           srcset=" 
+    </div>
+    <!-- 5 секция Контакты -->
+    <div class="h-[300px] bg-[#FDFAEC] relative py-4">
+      <div class="w-full flex flex-col justify-center items-center">
+        <img class="aspect-[0.83] object-contain object-center w-[136px] overflow-hidden self-center max-w-full"
+          loading="lazy" srcset=" 
           ./public/images/Logo/Logo68px@1x.png 68w, 
           ./public/images/Logo/Logo136px@2x.png 136w 2x,
-          "
-         
-  sizes="(max-width: 768px) 50px, 100px"
-  src="./public/images/Logo/Logo68px@1x.png "
-  alt="Logo"
-      />
-          <p class="text-slate-950 text-center text-sm font-bold mt-4">
-            Недвижимость
-          </p>
-          <p class="text-slate-950 text-center text-sm font-bold mt-2">
-            Инвестиционный Тур
-          </p>
-          <p class="text-slate-950 text-center text-sm font-bold mt-2">
-            Районы Албании
-          </p>
-          <div class="items-stretch flex justify-between mt-2 px-5">
-            <div class="items-stretch flex justify-between gap-2 mr-4">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bd8575e317aed2307979b3764b7b046a235bc538392ca7a00c3d66378ea6922?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-                class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full"
-              />
-              <p
-                class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap"
-              >
-                +380 93 512 85 47
-              </p>
-            </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8a2bfb362b575a78c9ab635152ad09d769f949d466968dd5c4bb42d34622f83?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-              class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full"
-            />
-            <p
-              class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap"
-            >
-              Durrës, Albania
+          " sizes="(max-width: 768px) 50px, 100px" src="./public/images/Logo/Logo68px@1x.png " alt="Logo" />
+        <p class="text-slate-950 text-center text-sm font-bold mt-4">
+          Недвижимость
+        </p>
+        <p class="text-slate-950 text-center text-sm font-bold mt-2">
+          Инвестиционный Тур
+        </p>
+        <p class="text-slate-950 text-center text-sm font-bold mt-2">
+          Районы Албании
+        </p>
+        <div class="items-stretch flex justify-between mt-2 px-5">
+          <div class="items-stretch flex justify-between gap-2 mr-4">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bd8575e317aed2307979b3764b7b046a235bc538392ca7a00c3d66378ea6922?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
+              class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
+            <p class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">
+              +380 93 512 85 47
             </p>
           </div>
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8a2bfb362b575a78c9ab635152ad09d769f949d466968dd5c4bb42d34622f83?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
+            class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
+          <p class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">
+            Durrës, Albania
+          </p>
         </div>
       </div>
-    </main>
-    <!-- Футер -->
-    <footer >
-      <div class="h-[680px] relative">
-        <!-- Бекграунд -->
-     
-        <div  class="absolute w-full h-full z-0" style="
+    </div>
+  </main>
+  <!-- Футер -->
+  <footer>
+    <div class="h-[680px] relative">
+      <!-- Бекграунд -->
+
+      <div class="absolute w-full h-full z-0" style="
             background-image: url('./public/images/bg-footer.webp');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
           "></div>
-        <!-- Градиент -->
+      <!-- Градиент -->
+      <div class="top-[-1px] absolute inset-0 bg-gradient-to-b from-[#FDFAEC] to-transparent h-1/4"></div>
+      <!-- Контент -->
+      <div class="flex justify-center items-center w-full h-full ">
         <div
-          class="top-[-1px] absolute inset-0 bg-gradient-to-b from-[#FDFAEC] to-transparent h-1/4"
-        ></div>
-        <!-- Контент -->
-        <div
-          class="flex justify-center items-center w-full h-full "
-        >
-          <div
-            class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-10 py-10 rounded-md items-center max-w-72"
-          >
-            <p class="text-slate-950 text-center text-base font-medium mb-8">
-              Подпишитесь и будьте в курсе актуальных событий в мире
-              недвижимости Албании!
-            </p>
-            <div class="flex flex-row  gap-10 mb-8">            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_1_365)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.1717 5.8126C30.4121 2.06619 25.4118 0.00195138 20.084 0C9.10573 0 0.17098 8.89094 0.167137 19.8194C0.165255 23.313 1.08298 26.723 2.8258 29.7282L0 40L10.5582 37.2438C13.467 38.8235 16.7425 39.655 20.0755 39.6559H20.084C31.0604 39.6559 39.9962 30.7641 39.9999 19.8356C40.0018 14.5392 37.9324 9.56002 34.1717 5.81354V5.8126ZM20.084 36.3087H20.0773C17.1073 36.3078 14.1937 35.5132 11.6516 34.0126L11.0471 33.6553L4.78157 35.2908L6.45373 29.2112L6.06024 28.5877C4.40337 25.9647 3.52769 22.9329 3.52957 19.8204C3.53341 10.7375 10.9593 3.34723 20.0907 3.34723C24.5122 3.34918 28.6683 5.06468 31.7938 8.17907C34.9195 11.2925 36.6394 15.4325 36.6375 19.8337C36.6336 28.9175 29.2078 36.3078 20.084 36.3078V36.3087ZM29.1638 23.9708C28.6663 23.7227 26.2198 22.5252 25.7632 22.3598C25.3067 22.1944 24.9755 22.1118 24.644 22.6079C24.3126 23.1041 23.3587 24.2198 23.0683 24.5495C22.778 24.8803 22.4877 24.9212 21.9901 24.673C21.4926 24.425 19.8892 23.9023 17.9878 22.2153C16.5086 20.9019 15.5096 19.2806 15.2195 18.7844C14.9291 18.2884 15.1889 18.0203 15.4371 17.7741C15.6605 17.5518 15.9347 17.1954 16.1839 16.9065C16.4332 16.6175 16.5153 16.4104 16.6814 16.0806C16.8477 15.7498 16.7645 15.4611 16.6405 15.2128C16.5162 14.9649 15.5212 12.5271 15.1057 11.5358C14.7017 10.5703 14.2912 10.7014 13.9866 10.6853C13.6962 10.671 13.3649 10.6682 13.0325 10.6682C12.7002 10.6682 12.1616 10.7917 11.7051 11.2878C11.2486 11.7838 9.96322 12.9823 9.96322 15.4191C9.96322 17.8559 11.7462 20.212 11.9955 20.5428C12.2446 20.8735 15.5049 25.8753 20.4965 28.0214C21.6836 28.5317 22.6108 28.8367 23.3338 29.0648C24.5256 29.4421 25.6104 29.389 26.4679 29.2615C27.424 29.1191 29.4122 28.0631 29.8267 26.9064C30.241 25.7498 30.241 24.7576 30.1169 24.5513C29.9929 24.3452 29.6606 24.2206 29.163 23.9726L29.1638 23.9708Z" fill="#294628"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1_365">
-      <rect width="40" height="40" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_1_367)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.69564 0H31.3044C36.0871 0 40 3.91305 40 8.69573V31.3044C40 36.0869 36.0871 40 31.3044 40H8.69564C3.91294 40 0 36.0869 0 31.3044V8.69573C0 3.91305 3.91294 0 8.69564 0ZM24.0154 8.4771C24.0153 8.47706 24.0153 8.47709 24.0153 8.47715C24.0468 8.74636 24.0894 9.00878 24.1428 9.26379C24.1691 9.38966 24.2813 9.47791 24.4099 9.47795L24.5464 9.478C24.7749 9.47807 24.9659 9.64939 25.0014 9.87503C25.1379 10.7424 25.3831 11.5483 25.7349 12.2596C25.8759 12.5448 26.077 12.7975 26.3296 12.991C27.0099 13.5122 27.8267 13.8656 28.7682 14.014C29.097 14.0658 29.3564 14.3377 29.3564 14.6705V14.8089C29.3564 15.0272 29.5033 15.2164 29.7195 15.2467C29.9602 15.2803 30.1555 15.48 30.1555 15.7231V17.1028C30.1555 18.0963 29.4661 18.9621 28.4868 18.7945C26.9337 18.5287 25.0941 19.4562 25.166 21.0302L25.2767 23.4515C25.2767 25.4193 25.284 26.3185 24.2281 28.1287C21.9457 32.0414 17.9046 32.4817 15.0339 30.7782C14.5752 30.506 14.1038 30.2517 13.6227 30.0216C12.462 29.4665 11.4578 28.6009 10.7813 27.4941C8.50727 23.7736 10.3561 17.8189 16.5296 16.7057C17.0239 16.6166 17.4585 17.0161 17.4525 17.5184C17.4525 17.6404 17.5645 17.7314 17.6844 17.7093C17.811 17.686 17.9398 17.6647 18.0706 17.6456C18.3685 17.602 18.6277 17.8388 18.6277 18.1398V19.6987C18.6277 20.6431 17.9185 21.3897 17.0508 21.7624C16.4313 22.0285 15.9949 22.3935 15.7335 22.8935C15.1962 23.9209 15.1303 24.8668 15.3669 25.6607C15.6628 26.6531 16.7723 27.2343 17.7499 26.8928C19.1212 26.4138 20.2195 24.8678 19.9801 21.8085V9.65761C19.9801 9.00569 20.5086 8.47721 21.1605 8.47721H24.0153C24.0154 8.47721 24.0154 8.47714 24.0154 8.4771Z" fill="#1A121F"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0153 8.47668C24.3864 11.6454 26.2851 13.8812 29.3565 14.0784V17.0839L29.3367 17.0857V14.5327C26.2653 14.3356 24.4994 12.4459 24.1282 9.2772L20.8745 9.27708V22.6084C21.344 28.6089 16.6686 28.7871 14.88 26.5121C16.9778 27.8241 20.384 26.9712 19.9801 21.8079V8.47656H24.0154L24.0153 8.47668ZM15.2728 30.5763C13.4346 30.1979 11.763 29.0996 10.7813 27.4936C8.39628 23.5918 10.5462 17.2323 17.4637 16.5778L17.4524 17.518C11.0391 18.5394 10.3954 25.4283 12.1713 28.2942C12.8562 29.3992 13.9805 30.1765 15.2728 30.5764V30.5763Z" fill="#26F4EE"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9471 9.47778C25.1584 11.2821 25.8222 12.852 26.9215 13.9061C25.3776 13.1075 24.4459 11.5883 24.1541 9.47754L24.9472 9.47778H24.9471ZM29.3366 15.1791C29.5984 15.2346 29.8714 15.2723 30.1555 15.2905V18.8533C28.3739 19.0287 26.8146 18.4422 24.9978 17.3496L25.2767 23.4512C25.2767 25.4189 25.284 26.3182 24.2281 28.1284C21.655 32.5396 16.8461 32.5375 13.9995 30.0256C17.7111 32.1574 24.1908 30.4884 24.1789 23.2513V16.5918C25.9959 17.6844 27.555 18.2709 29.3366 18.0954V15.1792V15.1791ZM17.4524 17.7542C17.825 17.6767 18.2162 17.617 18.6276 17.5781V21.3354C17.1296 21.5822 16.1782 22.0422 15.7334 22.893C14.4805 25.2886 15.7903 27.2415 17.5241 27.8567C15.3551 27.7788 13.203 25.551 14.6975 22.693C15.1424 21.8424 15.9544 21.3823 17.4525 21.1354V17.7542H17.4524Z" fill="#FB2C53"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1281 9.27759C24.4992 12.4463 26.2651 14.336 29.3365 14.5331V18.0957C27.5549 18.2712 25.9956 17.6847 24.1788 16.5921V23.2516C24.1931 31.9435 14.8426 32.6049 12.1713 28.2946C10.3953 25.4289 11.0391 18.5398 17.4524 17.5184V21.136C15.9544 21.3828 15.1424 21.8429 14.6974 22.6936C11.9484 27.9505 21.537 31.0782 20.8744 22.6089V9.27759L24.1281 9.27771V9.27759Z" fill="#FEFEFE"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1_367">
-      <rect width="40" height="40" rx="20" fill="white"/>
-    </clipPath>
-  </defs>
-</svg><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_1_372)">
-    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="url(#paint0_linear_1_372)"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05331 19.7894C14.8838 17.2487 18.7713 15.5745 20.7166 14.7651C26.2713 12.455 27.4252 12.0534 28.1775 12.0401C28.3432 12.0378 28.7127 12.0784 28.9525 12.2729C29.1549 12.437 29.2103 12.6589 29.2369 12.8144C29.2635 12.9706 29.2971 13.3245 29.2705 13.6019C28.9697 16.7644 27.6674 24.4386 27.0049 27.9808C26.7244 29.48 26.1721 29.9823 25.6377 30.0315C24.4768 30.1386 23.5947 29.2636 22.4697 28.5261C20.7096 27.3729 19.715 26.6542 18.0064 25.5284C16.0314 24.2269 17.3119 23.512 18.4369 22.3433C18.7314 22.037 23.8486 17.3823 23.9478 16.9604C23.9603 16.9073 23.9721 16.7104 23.8549 16.6065C23.7377 16.5026 23.565 16.5386 23.4408 16.5667C23.2643 16.6065 20.4525 18.4651 15.0049 22.1425C14.2064 22.6909 13.483 22.9573 12.8353 22.944C12.1213 22.9284 10.7478 22.5401 9.72675 22.2081C8.47441 21.8011 7.47909 21.5854 7.56581 20.894C7.61034 20.5339 8.10644 20.1659 9.05331 19.7894Z" fill="white"/>
-  </g>
-  <defs>
-    <linearGradient id="paint0_linear_1_372" x1="20" y1="0.3" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2AABEE"/>
-      <stop offset="1" stop-color="#229ED9"/>
-    </linearGradient>
-    <clipPath id="clip0_1_372">
-      <rect width="40" height="40" fill="white"/>
-    </clipPath>
-  </defs>
-</svg><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_1_375)">
-    <path d="M40 20C40 8.95403 31.046 0 20 0C8.95403 0 0 8.95403 0 20C0 29.38 6.45737 37.2495 15.1686 39.4114V26.1116H11.0444V20H15.1686V17.3666C15.1686 10.5587 18.2491 7.40354 24.932 7.40354C26.1996 7.40354 28.3859 7.65265 29.2802 7.90098V13.4413C28.8079 13.3917 27.9882 13.3666 26.9697 13.3666C23.6904 13.3666 22.4228 14.609 22.4228 17.8389V20H28.9556L27.8334 26.1116H22.4228V39.8538C32.3261 38.6578 40 30.2255 40 20Z" fill="#0866FF"/>
-    <path d="M27.8334 26.1116L28.9556 20H22.4228V17.8389C22.4228 14.6091 23.6903 13.3666 26.9697 13.3666C27.9882 13.3666 28.8078 13.3918 29.2801 13.4413V7.90101C28.3858 7.65268 26.1996 7.40356 24.932 7.40356C18.2491 7.40356 15.1685 10.5596 15.1685 17.3666V20H11.0444V26.1116H15.1685V39.4114C16.7159 39.7949 18.334 40 20 40C20.8204 40 21.6283 39.9497 22.4228 39.8539V26.1116H27.8334Z" fill="white"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1_375">
-      <rect width="40" height="40" fill="white"/>
-    </clipPath>
-  </defs>
-</svg></div>
-
-            <div class="flex flex-col justify-start "></div>
-            <ul class="text-slate-950 text-sm w-64 list-disc font-normal flex flex-col gap-4">
-              <li>Новости рынка недвижимости Албании</li>
-              <li>Оповещения о новых стартах продаж</li>
-              <li>Доступ к эксклюзивным объектам на этапе pre-sale </li>
-              <li>Инвестиционные предложения</li>
-            </ul>
-            <a
-              href="https://www.youtube.com/watch?v=MbO4XGmdADk"
-              class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5"
-            >
-              Подписаться на YouTube
-            </a>
+          class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-10 py-10 rounded-md items-center max-w-72">
+          <p class="text-slate-950 text-center text-base font-medium mb-8">
+            Подпишитесь и будьте в курсе актуальных событий в мире
+            недвижимости Албании!
+          </p>
+          <div class="flex flex-row  gap-10 mb-8"> <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_365)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34.1717 5.8126C30.4121 2.06619 25.4118 0.00195138 20.084 0C9.10573 0 0.17098 8.89094 0.167137 19.8194C0.165255 23.313 1.08298 26.723 2.8258 29.7282L0 40L10.5582 37.2438C13.467 38.8235 16.7425 39.655 20.0755 39.6559H20.084C31.0604 39.6559 39.9962 30.7641 39.9999 19.8356C40.0018 14.5392 37.9324 9.56002 34.1717 5.81354V5.8126ZM20.084 36.3087H20.0773C17.1073 36.3078 14.1937 35.5132 11.6516 34.0126L11.0471 33.6553L4.78157 35.2908L6.45373 29.2112L6.06024 28.5877C4.40337 25.9647 3.52769 22.9329 3.52957 19.8204C3.53341 10.7375 10.9593 3.34723 20.0907 3.34723C24.5122 3.34918 28.6683 5.06468 31.7938 8.17907C34.9195 11.2925 36.6394 15.4325 36.6375 19.8337C36.6336 28.9175 29.2078 36.3078 20.084 36.3078V36.3087ZM29.1638 23.9708C28.6663 23.7227 26.2198 22.5252 25.7632 22.3598C25.3067 22.1944 24.9755 22.1118 24.644 22.6079C24.3126 23.1041 23.3587 24.2198 23.0683 24.5495C22.778 24.8803 22.4877 24.9212 21.9901 24.673C21.4926 24.425 19.8892 23.9023 17.9878 22.2153C16.5086 20.9019 15.5096 19.2806 15.2195 18.7844C14.9291 18.2884 15.1889 18.0203 15.4371 17.7741C15.6605 17.5518 15.9347 17.1954 16.1839 16.9065C16.4332 16.6175 16.5153 16.4104 16.6814 16.0806C16.8477 15.7498 16.7645 15.4611 16.6405 15.2128C16.5162 14.9649 15.5212 12.5271 15.1057 11.5358C14.7017 10.5703 14.2912 10.7014 13.9866 10.6853C13.6962 10.671 13.3649 10.6682 13.0325 10.6682C12.7002 10.6682 12.1616 10.7917 11.7051 11.2878C11.2486 11.7838 9.96322 12.9823 9.96322 15.4191C9.96322 17.8559 11.7462 20.212 11.9955 20.5428C12.2446 20.8735 15.5049 25.8753 20.4965 28.0214C21.6836 28.5317 22.6108 28.8367 23.3338 29.0648C24.5256 29.4421 25.6104 29.389 26.4679 29.2615C27.424 29.1191 29.4122 28.0631 29.8267 26.9064C30.241 25.7498 30.241 24.7576 30.1169 24.5513C29.9929 24.3452 29.6606 24.2206 29.163 23.9726L29.1638 23.9708Z"
+                  fill="#294628" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_365">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_367)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.69564 0H31.3044C36.0871 0 40 3.91305 40 8.69573V31.3044C40 36.0869 36.0871 40 31.3044 40H8.69564C3.91294 40 0 36.0869 0 31.3044V8.69573C0 3.91305 3.91294 0 8.69564 0ZM24.0154 8.4771C24.0153 8.47706 24.0153 8.47709 24.0153 8.47715C24.0468 8.74636 24.0894 9.00878 24.1428 9.26379C24.1691 9.38966 24.2813 9.47791 24.4099 9.47795L24.5464 9.478C24.7749 9.47807 24.9659 9.64939 25.0014 9.87503C25.1379 10.7424 25.3831 11.5483 25.7349 12.2596C25.8759 12.5448 26.077 12.7975 26.3296 12.991C27.0099 13.5122 27.8267 13.8656 28.7682 14.014C29.097 14.0658 29.3564 14.3377 29.3564 14.6705V14.8089C29.3564 15.0272 29.5033 15.2164 29.7195 15.2467C29.9602 15.2803 30.1555 15.48 30.1555 15.7231V17.1028C30.1555 18.0963 29.4661 18.9621 28.4868 18.7945C26.9337 18.5287 25.0941 19.4562 25.166 21.0302L25.2767 23.4515C25.2767 25.4193 25.284 26.3185 24.2281 28.1287C21.9457 32.0414 17.9046 32.4817 15.0339 30.7782C14.5752 30.506 14.1038 30.2517 13.6227 30.0216C12.462 29.4665 11.4578 28.6009 10.7813 27.4941C8.50727 23.7736 10.3561 17.8189 16.5296 16.7057C17.0239 16.6166 17.4585 17.0161 17.4525 17.5184C17.4525 17.6404 17.5645 17.7314 17.6844 17.7093C17.811 17.686 17.9398 17.6647 18.0706 17.6456C18.3685 17.602 18.6277 17.8388 18.6277 18.1398V19.6987C18.6277 20.6431 17.9185 21.3897 17.0508 21.7624C16.4313 22.0285 15.9949 22.3935 15.7335 22.8935C15.1962 23.9209 15.1303 24.8668 15.3669 25.6607C15.6628 26.6531 16.7723 27.2343 17.7499 26.8928C19.1212 26.4138 20.2195 24.8678 19.9801 21.8085V9.65761C19.9801 9.00569 20.5086 8.47721 21.1605 8.47721H24.0153C24.0154 8.47721 24.0154 8.47714 24.0154 8.4771Z"
+                  fill="#1A121F" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.0153 8.47668C24.3864 11.6454 26.2851 13.8812 29.3565 14.0784V17.0839L29.3367 17.0857V14.5327C26.2653 14.3356 24.4994 12.4459 24.1282 9.2772L20.8745 9.27708V22.6084C21.344 28.6089 16.6686 28.7871 14.88 26.5121C16.9778 27.8241 20.384 26.9712 19.9801 21.8079V8.47656H24.0154L24.0153 8.47668ZM15.2728 30.5763C13.4346 30.1979 11.763 29.0996 10.7813 27.4936C8.39628 23.5918 10.5462 17.2323 17.4637 16.5778L17.4524 17.518C11.0391 18.5394 10.3954 25.4283 12.1713 28.2942C12.8562 29.3992 13.9805 30.1765 15.2728 30.5764V30.5763Z"
+                  fill="#26F4EE" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.9471 9.47778C25.1584 11.2821 25.8222 12.852 26.9215 13.9061C25.3776 13.1075 24.4459 11.5883 24.1541 9.47754L24.9472 9.47778H24.9471ZM29.3366 15.1791C29.5984 15.2346 29.8714 15.2723 30.1555 15.2905V18.8533C28.3739 19.0287 26.8146 18.4422 24.9978 17.3496L25.2767 23.4512C25.2767 25.4189 25.284 26.3182 24.2281 28.1284C21.655 32.5396 16.8461 32.5375 13.9995 30.0256C17.7111 32.1574 24.1908 30.4884 24.1789 23.2513V16.5918C25.9959 17.6844 27.555 18.2709 29.3366 18.0954V15.1792V15.1791ZM17.4524 17.7542C17.825 17.6767 18.2162 17.617 18.6276 17.5781V21.3354C17.1296 21.5822 16.1782 22.0422 15.7334 22.893C14.4805 25.2886 15.7903 27.2415 17.5241 27.8567C15.3551 27.7788 13.203 25.551 14.6975 22.693C15.1424 21.8424 15.9544 21.3823 17.4525 21.1354V17.7542H17.4524Z"
+                  fill="#FB2C53" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.1281 9.27759C24.4992 12.4463 26.2651 14.336 29.3365 14.5331V18.0957C27.5549 18.2712 25.9956 17.6847 24.1788 16.5921V23.2516C24.1931 31.9435 14.8426 32.6049 12.1713 28.2946C10.3953 25.4289 11.0391 18.5398 17.4524 17.5184V21.136C15.9544 21.3828 15.1424 21.8429 14.6974 22.6936C11.9484 27.9505 21.537 31.0782 20.8744 22.6089V9.27759L24.1281 9.27771V9.27759Z"
+                  fill="#FEFEFE" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_367">
+                  <rect width="40" height="40" rx="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_372)">
+                <path
+                  d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                  fill="url(#paint0_linear_1_372)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.05331 19.7894C14.8838 17.2487 18.7713 15.5745 20.7166 14.7651C26.2713 12.455 27.4252 12.0534 28.1775 12.0401C28.3432 12.0378 28.7127 12.0784 28.9525 12.2729C29.1549 12.437 29.2103 12.6589 29.2369 12.8144C29.2635 12.9706 29.2971 13.3245 29.2705 13.6019C28.9697 16.7644 27.6674 24.4386 27.0049 27.9808C26.7244 29.48 26.1721 29.9823 25.6377 30.0315C24.4768 30.1386 23.5947 29.2636 22.4697 28.5261C20.7096 27.3729 19.715 26.6542 18.0064 25.5284C16.0314 24.2269 17.3119 23.512 18.4369 22.3433C18.7314 22.037 23.8486 17.3823 23.9478 16.9604C23.9603 16.9073 23.9721 16.7104 23.8549 16.6065C23.7377 16.5026 23.565 16.5386 23.4408 16.5667C23.2643 16.6065 20.4525 18.4651 15.0049 22.1425C14.2064 22.6909 13.483 22.9573 12.8353 22.944C12.1213 22.9284 10.7478 22.5401 9.72675 22.2081C8.47441 21.8011 7.47909 21.5854 7.56581 20.894C7.61034 20.5339 8.10644 20.1659 9.05331 19.7894Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_1_372" x1="20" y1="0.3" x2="20" y2="40"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2AABEE" />
+                  <stop offset="1" stop-color="#229ED9" />
+                </linearGradient>
+                <clipPath id="clip0_1_372">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_375)">
+                <path
+                  d="M40 20C40 8.95403 31.046 0 20 0C8.95403 0 0 8.95403 0 20C0 29.38 6.45737 37.2495 15.1686 39.4114V26.1116H11.0444V20H15.1686V17.3666C15.1686 10.5587 18.2491 7.40354 24.932 7.40354C26.1996 7.40354 28.3859 7.65265 29.2802 7.90098V13.4413C28.8079 13.3917 27.9882 13.3666 26.9697 13.3666C23.6904 13.3666 22.4228 14.609 22.4228 17.8389V20H28.9556L27.8334 26.1116H22.4228V39.8538C32.3261 38.6578 40 30.2255 40 20Z"
+                  fill="#0866FF" />
+                <path
+                  d="M27.8334 26.1116L28.9556 20H22.4228V17.8389C22.4228 14.6091 23.6903 13.3666 26.9697 13.3666C27.9882 13.3666 28.8078 13.3918 29.2801 13.4413V7.90101C28.3858 7.65268 26.1996 7.40356 24.932 7.40356C18.2491 7.40356 15.1685 10.5596 15.1685 17.3666V20H11.0444V26.1116H15.1685V39.4114C16.7159 39.7949 18.334 40 20 40C20.8204 40 21.6283 39.9497 22.4228 39.8539V26.1116H27.8334Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_375">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </div>
+
+          <div class="flex flex-col justify-start "></div>
+          <ul class="text-slate-950 text-sm w-64 list-disc font-normal flex flex-col gap-4">
+            <li>Новости рынка недвижимости Албании</li>
+            <li>Оповещения о новых стартах продаж</li>
+            <li>Доступ к эксклюзивным объектам на этапе pre-sale </li>
+            <li>Инвестиционные предложения</li>
+          </ul>
+          <a href="https://www.youtube.com/watch?v=MbO4XGmdADk"
+            class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5">
+            Подписаться на YouTube
+          </a>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+<script>
+  const content = {
+    eng: {
+      title: "REAL ESTATE IN ALBANIA",
+      description: "Purchase property by the sea and get a residence permit!",
+      buttonText: "Get a property selection",
+      items: [
+        "Assistance in selecting and buying real estate",
+        "Repairs and furnishing",
+        "Rent and management of your property"
+      ]
+    },
+    pl: {
+      title: "NIERUCHOMOŚCI W ALBANII",
+      description: "Kup nieruchomość nad morzem i uzyskaj pozwolenie na zamieszkanie!",
+      buttonText: "Otrzymaj wybór nieruchomości",
+      items: [
+        "Pomoc w wyborze i zakupie nieruchomości",
+        "Remonty i umeblowanie",
+        "Wynajem i zarządzanie Twoją nieruchomością"
+      ]
+    },
+    ru: {
+      title: "НЕДВИЖИМОСТЬ В АЛБАНИИ",
+      description: "Приобретите недвижимость у моря и получите Вид на жительство!",
+      buttonText: "Получить подбор недвижимости",
+      items: [
+        "Помощь в подборе и покупке недвижимости",
+        "Ремонт и меблировка",
+        "Аренда и управление вашей недвижимостью"
+      ]
+    }
+  };
+
+  function updateContent(language) {
+    const langContent = content[language];
+
+    document.getElementById("title1").textContent = langContent.title;
+    document.getElementById("description1").textContent = langContent.description;
+    document.getElementById("button1").textContent = langContent.buttonText;
+
+    const itemsList = document.getElementById("items1");
+    itemsList.innerHTML = langContent.items.map(item => `<li>${item}</li>`).join('');
+  }
+
+  let currentLanguage = "ru";
+  updateContent(currentLanguage);
+
+  document.getElementById("currency").addEventListener("change", function () {
+    currentLanguage = this.value;
+    updateContent(currentLanguage);
+  });
+</script>
+
+
 </html>
