@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>B&S Trust</title>
   <link href="/output.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet" />
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,13 +27,15 @@
     </a>
 
     <div class="inset-y-0 right-0 flex items-center">
-      <label for="currency" class="sr-only bg-red-700">Currency</label>
-      <select id="currency" name="currency"
+      <label for="translator" class="sr-only bg-red-700">Currency</label>
+      <select id="translator" name="translator"
         class="h-fit w-fit rounded-md border-0 outline-none bg-khaki py-0 pl-2 pr-7 text-gray-500  sm:text-sm relative">
+         <option class="w-full h-full bg-khaki " value="ru"  >RU</option>
         <option class="w-full h-full bg-khaki " value="eng" >
+
           ENG </option>
         <option class="w-full h-full bg-khaki "value="pl" >PL</option>
-        <option class="w-full h-full bg-khaki " value="ru"  >RU</option>
+       
       </select>
     </div>
   </header>
@@ -214,7 +216,7 @@
         <img class="aspect-[0.83] object-contain object-center w-[136px] overflow-hidden self-center max-w-full"
           loading="lazy" srcset=" 
           ./public/images/Logo/Logo68px@1x.png 68w, 
-          ./public/images/Logo/Logo136px@2x.png 136w 2x,
+          ./public/images/Logo/Logo136px@2x.png 136w,
           " sizes="(max-width: 768px) 50px, 100px" src="./public/images/Logo/Logo68px@1x.png " alt="Logo" />
         <p class="text-slate-950 text-center text-sm font-bold mt-4">
           Недвижимость
@@ -414,11 +416,11 @@ https://www.t.me/real_estate_al" target="_blank" > <svg width="40" height="40" v
   let currentLanguage = "ru";
   updateContent(currentLanguage);
 
-  document.getElementById("currency").addEventListener("change", function () {
+  document.getElementById("translator").addEventListener("change", function () {
     currentLanguage = this.value;
     updateContent(currentLanguage);
   });
 </script>
-
+<script src="./index.js" type="module"></script>
 
 </html>
