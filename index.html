@@ -74,108 +74,86 @@
               background-size: contain, cover  ;
               background-repeat: no-repeat;">
       <div class="absolute  w-full h-full z-0 "></div>
-      <h2 class="text-xl font-normal text-center mb-32 z-20">Почему АЛБАНИЯ?</h2>
-      <ul class="flex flex-col">
-        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+      <h2 id="heading" class=" font-normal text-center mb-32 z-20">Почему АЛБАНИЯ?</h2>
+      <ul id="list" class="flex flex-col">
+        <li id="item1" class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
           Самая дешевая недвижимость на Адриатике
         </li>
-        <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+        <li id="item2" class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
           Безопасная страна
         </li>
-        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+        <li id="item3" class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
           300 дней в году солнце
         </li>
-        <li class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
+        <li id="item4" class="w-fit mb-16 self-end bg-white rounded-3xl p-2 z-20">
           Экологичные продукты питания
         </li>
-        <li class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
+        <li id="item5" class="w-fit mb-16 self-start bg-white rounded-3xl p-2 z-20">
           Благоприятный климат
         </li>
       </ul>
     </section>
 
     <!-- 3 cекция План действий -->
-    <div class="h-[1200px]  bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3] relative px-4 py-6">
-      <div class="absolute top-48 left-0 w-64 h-56 bg-cover bg-center z-0"
-        style="background-image: url('./public/bgTour1@2x.png')"></div>
-      <div class="absolute top-1/2 right-0 w-60 h-56 bg-cover bg-center"
-        style="background-image: url('./public/bgTour2@2x.png')"></div>
-      <div class="absolute bottom-32 left-0 w-64 h-56 bg-cover bg-center"
-        style="background-image: url('./public/bgTour3@2x.png')"></div>
+  <section class="h-[1200px] bg-gradient-to-b from-[#FDFAEC] to-[#7ba5d3] relative px-4 py-6">
+    <div class="absolute top-48 left-0 w-64 h-56 bg-cover bg-center z-0" style="background-image: url('./public/bgTour1@2x.png')" id="bgImage1"></div>
+    <div class="absolute top-1/2 right-0 w-60 h-56 bg-cover bg-center" style="background-image: url('./public/bgTour2@2x.png')" id="bgImage2"></div>
+    <div class="absolute bottom-32 left-0 w-64 h-56 bg-cover bg-center" style="background-image: url('./public/bgTour3@2x.png')" id="bgImage3"></div>
 
-
-      <h2 class="justify-center text-slate-950 text-2xl font-bold leading-10 mb-4">
-        Инвестиционный тур
-        <br />
-        в Албанию
-      </h2>
-      <h3 class="justify-center text-sky-950 text-base font-normal mb-16">
-        Бесплатный ознакомительный тур по
-
-        недвижимости в Албании
-      </h3>
-      <ul class="flex flex-col">
-        <li
-          class="relative z-10 w-[210px] h-[86px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md  self-end mb-40   backdrop-blur-md">
-          <div class="  z-10">
-            <h4 class="text-slate-950 text-sm font-extrabold mb-4  z-30 backdrop-blur-0  ">
-              <span class="text-slate-950 text-xs whitespace-nowrap my-auto">01. </span>Тур до 5 дней
-            </h4>
-            <p class="text-sky-950 text-xs font-medium whitespace-nowrap mb-2">Экскурсии и прогулки по городу</p>
-            <p class="text-sky-950 text-xs font-medium whitespace-nowrap ">Осмотр школ и университетов</p>
-          </div>
-        </li>
-        <li class="relative z-10 w-fit  self-start mb-8">
-          <div>
-
-            <h4 class="text-slate-950 text-sm font-bold">
-              <span class="text-slate-950 text-xs whitespace-nowrap my-auto">02. </span>Удобные для Вас даты
-            </h4>
-
-
-          </div>
-        </li>
-        <li class="relative z-10 w-fit self-end mb-32">
-          <h4 class="text-slate-950 text-sm font-bold mb-4">
-            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">03. </span>Встреча в аэропорту
+    <h2 id="tourTitle" class="justify-center text-slate-950 text-2xl font-bold leading-10 mb-4">
+      Инвестиционный тур
+      <br />
+      в Албанию
+    </h2>
+    <h3 id="tourSubtitle" class="justify-center text-sky-950 text-base font-normal mb-16">
+      Бесплатный ознакомительный тур по
+      недвижимости в Албании
+    </h3>
+    <ul class="flex flex-col">
+      <li id="item1" class="relative z-10 w-[210px] h-[86px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md self-end mb-40 backdrop-blur-md">
+        <div class="z-10">
+          <h4 id="item1Title" class="text-slate-950 text-sm font-extrabold mb-4 z-30 backdrop-blur-0">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">01. </span>Тур до 5 дней
           </h4>
-        </li>
-        <li
-          class="relative self-start z-10 w-[196px] h-[94px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md   backdrop-blur-md  mb-48">
-
-          <h4 class="text-slate-950 text-sm font-bold text-right ">
-            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">04. </span>Трансфер аэропорт/отель/аэропорт
+          <p id="item1Desc" class="text-sky-950 text-xs font-medium whitespace-nowrap mb-2">Экскурсии и прогулки по городу</p>
+          <p class="text-sky-950 text-xs font-medium whitespace-nowrap">Осмотр школ и университетов</p>
+        </div>
+      </li>
+      <li id="item2" class="relative z-10 w-fit self-start mb-8">
+        <div>
+          <h4 id="item2Title" class="text-slate-950 text-sm font-bold">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">02. </span>Удобные для Вас даты
           </h4>
-          <p class="text-sky-950 text-xs self-stretch mt-5">Консультация по оформлению
-            сделки по недвижимости</p>
-
-        </li>
-        <li
-          class="relative flex justify-between flex-col z-10 self-end w-[248px] h-[88px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md   backdrop-blur-md mb-12">
-          <div class="absolute">
-            <h4 class="text-slate-950 text-sm font-bold text-right mb-4">
-              <span class="text-slate-950 text-xs whitespace-nowrap my-auto ">05. </span>Размещение в комфортных
-              апартаментах
-            </h4>
-            <p class="text-sky-950 text-xs self-stretch  text-right">Открытие банковского счета</p>
-          </div>
-
-        </li>
-        <li class="relative z-10 w-fit">
-          <h4 class="text-slate-950 text-sm font-bold mb-4">
-            <span class="text-slate-950 text-xs whitespace-nowrap my-auto">06. </span>Осмотр лучших объектов
-            <br />недвижимости под ваши цели
+        </div>
+      </li>
+      <li id="item3" class="relative z-10 w-fit self-end mb-32">
+        <h4 id="item3Title" class="text-slate-950 text-sm font-bold mb-4">
+          <span class="text-slate-950 text-xs whitespace-nowrap my-auto">03. </span>Встреча в аэропорту
+        </h4>
+      </li>
+      <li id="item4" class="relative z-10 w-[196px] h-[94px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md backdrop-blur-md mb-48">
+        <h4 id="item4Title" class="text-slate-950 text-sm font-bold text-right">
+          <span class="text-slate-950 text-xs whitespace-nowrap my-auto">04. </span>Трансфер аэропорт/отель/аэропорт
+        </h4>
+        <p class="text-sky-950 text-xs self-stretch mt-5">Консультация по оформлению сделки по недвижимости</p>
+      </li>
+      <li id="item5" class="relative flex justify-between flex-col z-10 self-end w-[248px] h-[88px] bg-[rgba(255, 255, 255, 0.16)] p-2 rounded-md backdrop-blur-md mb-12">
+        <div class="absolute">
+          <h4 id="item5Title" class="text-slate-950 text-sm font-bold text-right mb-4">
+            <span class="text-slate-950 text-xs whitespace-nowrap my-auto ">05. </span>Размещение в комфортных апартаментах
           </h4>
-          <p class="text-sky-950 text-xs self-stretch mb-2">Услуги адвоката</p>
-          <p class="text-sky-950 text-xs self-stretch ">Получение вида на жительство</p>
-        </li>
-      </ul>
-
-
-
-
-
-    </div>
+          <p class="text-sky-950 text-xs self-stretch text-right">Открытие банковского счета</p>
+        </div>
+      </li>
+      <li id="item6" class="relative z-10 w-fit">
+        <h4 id="item6Title" class="text-slate-950 text-sm font-bold mb-4">
+          <span class="text-slate-950 text-xs whitespace-nowrap my-auto">06. </span>Осмотр лучших объектов недвижимости под ваши цели
+        </h4>
+        <p id="item6Desc" class="text-sky-950 text-xs self-stretch mb-2">Услуги адвоката</p>
+        <p class="text-sky-950 text-xs self-stretch">Получение вида на жительство</p>
+      </li>
+    </ul>
+  </section>
     <!-- 4 секция Форма заявки -->
     <div class="h-[680px] relative">
       <img src="./public/images/bg-houses.webp" alt="bg-palms" class="w-full h-full object-cover"
@@ -370,5 +348,59 @@ https://www.t.me/real_estate_al" target="_blank" > <svg width="40" height="40" v
 </body>
 
 <script src="./index.js" type="module"></script>
+<script>
+    const translations = {
+      en: {
+        tourTitle: 'Investment Tour to Albania',
+        tourSubtitle: 'Free introductory tour of real estate in Albania',
+        item1Title: '01. Tour up to 5 days',
+        item1Desc: 'City tours and walks',
+        item2Title: '02. Convenient dates for you',
+        item3Title: '03. Meeting at the airport',
+        item4Title: '04. Transfer airport/hotel/airport',
+        item4Desc: 'Consultation on real estate transaction',
+        item5Title: '05. Accommodation in comfortable apartments',
+        item5Desc: 'Opening a bank account',
+        item6Title: '06. Inspection of the best real estate objects for your goals',
+        item6Desc: 'Lawyer services',
+      },
+      ru: {
+        tourTitle: 'Инвестиционный тур в Албанию',
+        tourSubtitle: 'Бесплатный ознакомительный тур по недвижимости в Албании',
+        item1Title: '01. Тур до 5 дней',
+        item1Desc: 'Экскурсии и прогулки по городу',
+        item2Title: '02. Удобные для Вас даты',
+        item3Title: '03. Встреча в аэропорту',
+        item4Title: '04. Трансфер аэропорт/отель/аэропорт',
+        item4Desc: 'Консультация по оформлению сделки по недвижимости',
+        item5Title: '05. Размещение в комфортных апартаментах',
+        item5Desc: 'Открытие банковского счета',
+        item6Title: '06. Осмотр лучших объектов недвижимости под ваши цели',
+        item6Desc: 'Услуги адвоката, Получение вида на жительство',
+      },
+      pl: {
+        tourTitle: 'Inwestycyjna wycieczka do Albanii',
+        tourSubtitle: 'Darmowa wstępna wycieczka po nieruchomościach w Albanii',
+        item1Title: '01. Wycieczka do 5 dni',
+        item1Desc: 'Zwiedzanie miasta i spacery',
+        item2Title: '02. Wygodne dla Ciebie daty',
+        item3Title: '03. Spotkanie na lotnisku',
+        item4Title: '04. Transfer lotnisko/hotel/lotnisko',
+        item4Desc: 'Konsultacje dotyczące transakcji nieruchomościowej',
+        item5Title: '05. Zakwaterowanie w komfortowych apartamentach',
+        item5Desc: 'Otwarcie konta bankowego',
+        item6Title: '06. Oglądanie najlepszych obiektów nieruchomości pod Twoje cele',
+        item6Desc: 'Usługi prawnika, Uzyskanie zezwolenia na pobyt stały',
+      },
+    };
 
+    function changeLanguage(lang) {
+      for (const key in translations[lang]) {
+        const element = document.getElementById(key);
+        if (element) {
+          element.innerText = translations[lang][key];
+        }
+      }
+    }
+  </script>
 </html>
