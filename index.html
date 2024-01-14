@@ -18,26 +18,38 @@
   <!-- Хедер -->
   <header class="px-4 py-0 bg-khaki relative flex justify-between items-center">
     <a href="/">
-      <img class="aspect-[0.83] object-contain object-center w-[100px] overflow-hidden self-center max-w-full"
-        loading="lazy" srcset="./public/images/Logo/Logo@1x.png 50w,
-            ./public/images/Logo/Logo@2x.png 100w, 
-            ./public/images/Logo/Logo68px@1x.png 68w, 
-            ./public/images/Logo/Logo136px@2x.png 136w" sizes="(max-width: 768px) 50px, 100px"
-        src="./public/images/Logo/Logo@2x.png" alt="Logo" />
+      <img class="object-contain object-center overflow-hidden self-center max-w-full w-28 "
+        loading="lazy" 
+        src="./public/images/Logo/logoHeader.png" alt="Logo" />
     </a>
+  
 
-    <div class="inset-y-0 right-0 flex items-center">
+
+    <div class="relative mr-4">
+     <p id="languageIcons" class="absolute w-1/2 z-40">
+    <!-- SVG-иконки для каждого языка с айдишниками -->
+    <!-- <svg class="icon w-10 h-5" >
+      <use id="plIcon" xlink:href="./public/sprite.svg#pl"></use>
+    </svg> -->
+    <svg class=" absolute top[2px] icon w-10 h-4">
+      <use id="ruIcon" xlink:href="./public/sprite.svg#ru"></use>
+    </svg>
+    <!-- <svg class="icon w-10 h-5">
+      <use id="enIcon" xlink:href="./public/sprite.svg#en"></use>
+    </svg> -->
+  </p>
       <label for="translator" class="sr-only bg-red-700">Currency</label>
       <select id="translator" name="translator"
-        class="h-fit w-fit rounded-md border-0 outline-none bg-khaki py-0 pl-2 pr-7 text-gray-500  sm:text-sm relative">
+        class="h-fit w-fit rounded-md border-0 outline-none bg-khaki py-0 pl-2  text-gray-500  sm:text-sm relative">
          <option class="w-full h-full bg-khaki " value="ru"  >RU</option>
-        <option class="w-full h-full bg-khaki " value="eng" >
+        <option class="w-full h-full bg-khaki " value="en" >
 
-          ENG </option>
+          EN </option>
         <option class="w-full h-full bg-khaki "value="pl" >PL</option>
        
       </select>
-    </div>
+      
+</div>
   </header>
 
   <main>
@@ -164,62 +176,82 @@
       <!-- Контент -->
       <div
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
-        <h2 class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6" aria-label="Form Title">
-          Форма заявки
-        </h2>
-        <div
-          class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl">
-          <p class="text-slate-950 text-center text-sm font-medium" aria-label="Form Description">
-            Оставьте заявку и наш эксперт свяжется с Вами
-          </p>
-          <div
-            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
-            <input type="text" placeholder="Ваше имя" class="input-field w-full" aria-label="Your Name" />
-          </div>
-          <div
-            class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
-            <input type="tel" placeholder="Телефон" class="input-field w-full" aria-label="Your Name" />
-          </div>
-          <button
-            class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4"
-            aria-label="Submit Form">
-            Отправить заявку
-          </button>
+        <h2 id="formTitle" class="text-slate-950 text-center text-2xl font-bold whitespace-nowrap mt-6" aria-label="Form Title">
+  Форма заявки
+</h2>
+<div id="formContainer" class="items-start backdrop-blur-lg bg-white bg-opacity-20 self-stretch flex flex-col mt-9 mb-5 px-4 py-8 rounded-2xl">
+  <p id="formDescription" class="text-slate-950 text-center text-sm font-medium" aria-label="Form Description">
+    Оставьте заявку и наш эксперт свяжется с Вами
+  </p>
+  <div id="nameInputContainer" class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
+    <input id="nameInput" type="text" placeholder="Ваше имя" class="input-field w-full" aria-label="Your Name" />
+  </div>
+  <div id="phoneInputContainer" class="text-slate-950 text-xl whitespace-nowrap bg-white self-stretch justify-center mt-6 px-4 py-3 rounded-3xl items-start">
+    <input id="phoneInput" type="tel" placeholder="Телефон" class="input-field w-full" aria-label="Your Name" />
+  </div>
+  <button id="submitBtn" class="text-white text-center text-base font-medium whitespace-nowrap justify-center items-center rounded bg-sky-950 self-stretch mt-8 px-16 py-4" aria-label="Submit Form">
+    Отправить заявку
+  </button>
         </div>
       </div>
     </div>
     <!-- 5 секция Контакты -->
     <div class="h-[300px] bg-[#FDFAEC] relative py-4">
       <div class="w-full flex flex-col justify-center items-center">
-        <img class="aspect-[0.83] object-contain object-center w-[136px] overflow-hidden self-center max-w-full"
-          loading="lazy" srcset=" 
-          ./public/images/Logo/Logo68px@1x.png 68w, 
-          ./public/images/Logo/Logo136px@2x.png 136w,
-          " sizes="(max-width: 768px) 50px, 100px" src="./public/images/Logo/Logo68px@1x.png " alt="Logo" />
-        <p class="text-slate-950 text-center text-sm font-bold mt-4">
-          Недвижимость
-        </p>
-        <p class="text-slate-950 text-center text-sm font-bold mt-2">
-          Инвестиционный Тур
-        </p>
-        <p class="text-slate-950 text-center text-sm font-bold mt-2">
-          Районы Албании
-        </p>
-        <div class="items-stretch flex justify-between mt-2 px-5">
-          <div class="items-stretch flex justify-between gap-2 mr-4">
-            <img loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bd8575e317aed2307979b3764b7b046a235bc538392ca7a00c3d66378ea6922?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-              class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
-            <a href="tel:+380 93 512 85 47" class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">
+        <img class=" object-contain object-center w-36 overflow-hidden self-center max-w-full"
+        src="./public/images/Logo/BS_Trust-removebg-preview.png" alt="Logo" />
+        <p id="realEstateTitle" class="text-slate-950 text-center text-sm font-bold mt-4">
+  Недвижимость
+</p>
+<p id="investmentTourTitle" class="text-slate-950 text-center text-sm font-bold mt-2">
+  Инвестиционный Тур
+</p>
+<p id="albaniaRegionsTitle" class="text-slate-950 text-center text-sm font-bold mt-2 mb-8">
+  Районы Албании
+</p>
+        <div class="flex justify-between items-stretch  px-5">
+          <div class="items-center flex justify-between gap-2 ">
+            
+ 
+            <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_347)">
+<g clip-path="url(#clip1_1_347)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.63296 4.21808C3.63296 4.21808 3.59296 4.26142 3.54046 4.31308C3.3388 4.50892 2.9213 4.91642 2.91708 5.76892C2.91046 6.96142 3.69463 9.17558 7.47046 12.9505C11.2288 16.7072 13.4396 17.5005 14.6346 17.5005H14.6522C15.5046 17.4964 15.9113 17.0781 16.1079 16.8772C16.1679 16.8155 16.2163 16.7705 16.2505 16.7422C17.0805 15.9072 17.5055 15.2855 17.5013 14.8872C17.4955 14.4805 16.9896 13.9998 16.2905 13.3348C16.0679 13.1231 15.8263 12.8931 15.5713 12.6381C14.9105 11.9789 14.5829 12.0914 13.8629 12.3448C12.8672 12.6939 11.5005 13.1689 9.37713 11.0447C7.25046 8.91975 7.72629 7.55475 8.07463 6.55892C8.3263 5.83892 8.4413 5.51058 7.77963 4.84892C7.52046 4.59058 7.28796 4.34558 7.0738 4.12058C6.41296 3.42558 5.9363 2.92308 5.53213 2.91725H5.52546C5.1263 2.91725 4.5063 3.34392 3.6288 4.22142C3.6313 4.21892 3.63296 4.21808 3.63296 4.21808ZM14.6355 18.7505C12.5588 18.7505 9.8513 17.0972 6.58713 13.8348C3.31046 10.5589 1.65463 7.84308 1.66706 5.76225C1.67463 4.38725 2.39546 3.68308 2.6663 3.41892C2.68046 3.40142 2.7288 3.35392 2.74546 3.33725C3.94046 2.14142 4.7463 1.65808 5.54796 1.66712C6.4788 1.67975 7.1413 2.37642 7.97963 3.25892C8.18713 3.47725 8.41213 3.71475 8.66296 3.96475C9.87963 5.18142 9.53296 6.17392 9.25463 6.97058C8.95129 7.83975 8.6888 8.58975 10.2605 10.1614C11.8338 11.7331 12.5838 11.4705 13.4496 11.1648C14.2472 10.8864 15.2372 10.5381 16.4555 11.7548C16.7022 12.0014 16.9363 12.2239 17.1522 12.4298C18.0388 13.2722 18.7388 13.9381 18.7506 14.8714C18.7605 15.6672 18.2772 16.4781 17.0838 17.6722L16.5555 17.3139L17.0022 17.7505C16.7379 18.0214 16.0346 18.7431 14.6588 18.7505H14.6355Z" fill="#002D4F"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_347">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1_347">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></p>
+              <a href="tel:+380 93 512 85 47" class="text-slate-950 text-sm font-medium grow whitespace-nowrap"> 
+
               +380 93 512 85 47
             </a>
-          </div>
-          <img loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8a2bfb362b575a78c9ab635152ad09d769f949d466968dd5c4bb42d34622f83?apiKey=a77a347bfa6546a9b883f1edb0ab9f63&"
-            class="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden shrink-0 max-w-full" />
+          
+         <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_353)">
+<g clip-path="url(#clip1_1_353)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.208 1.66699C13.9988 1.66699 17.0831 4.7745 17.0831 8.5945C17.0831 13.2904 11.7031 17.917 10.208 17.917C8.71301 17.917 3.33301 13.2904 3.33301 8.5945C3.33301 4.7745 6.41718 1.66699 10.208 1.66699ZM10.208 2.91699C7.10634 2.91699 4.58301 5.4645 4.58301 8.5945C4.58301 12.577 9.26967 16.457 10.208 16.6636C11.1463 16.4562 15.8331 12.5762 15.8331 8.5945C15.8331 5.4645 13.3097 2.91699 10.208 2.91699ZM10.2088 5.83367C11.7022 5.83367 12.9172 7.04867 12.9172 8.54283C12.9172 10.0362 11.7022 11.2504 10.2088 11.2504C8.7155 11.2504 7.50051 10.0362 7.50051 8.54283C7.50051 7.04867 8.7155 5.83367 10.2088 5.83367ZM10.2088 7.08367C9.40467 7.08367 8.75051 7.73783 8.75051 8.54283C8.75051 9.34699 9.40467 10.0003 10.2088 10.0003C11.0131 10.0003 11.6672 9.34699 11.6672 8.54283C11.6672 7.73783 11.0131 7.08367 10.2088 7.08367Z" fill="#002D4F"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_353">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1_353">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></p>
           <a href="https://maps.app.goo.gl/rkcJNgArfscrpwj37" target="_blank" class="justify-center text-slate-950 text-sm font-medium grow whitespace-nowrap">
             Durrës, Albania
           </a>
+          </div>
         </div>
       </div>
     </div>
@@ -241,7 +273,7 @@
       <div class="flex justify-center items-center w-full h-full ">
         <div
           class="bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-10 py-10 rounded-md items-center max-w-72">
-          <p class="text-slate-950 text-center text-base font-medium mb-8">
+          <p id="subscribeText" class="text-slate-950 text-center text-base font-medium mb-8">
             Подпишитесь и будьте в курсе актуальных событий в мире
             недвижимости Албании!
           </p>
@@ -331,16 +363,16 @@ https://www.t.me/real_estate_al" target="_blank" > <svg width="40" height="40" v
           </div>
 
           <div class="flex flex-col justify-start "></div>
-          <ul class="text-slate-950 text-sm w-64 list-disc font-normal flex flex-col gap-4">
-            <li>Новости рынка недвижимости Албании</li>
-            <li>Оповещения о новых стартах продаж</li>
-            <li>Доступ к эксклюзивным объектам на этапе pre-sale </li>
-            <li>Инвестиционные предложения</li>
-          </ul>
-          <a href="https://www.youtube.com/watch?v=MbO4XGmdADk"
-            class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5">
-            Подписаться на YouTube
-          </a>
+          <ul id="subscribeList" class="text-slate-950 text-sm w-64 list-disc font-normal flex flex-col gap-4">
+  <li>Новости рынка недвижимости Албании</li>
+  <li>Оповещения о новых стартах продаж</li>
+  <li>Доступ к эксклюзивным объектам на этапе pre-sale </li>
+  <li>Инвестиционные предложения</li>
+</ul>
+<a id="subscribeLink" href="https://youtube.com/@albania_gid"  target="_blank"
+  class="text-white text-center text-2xl no-underline rounded bg-sky-950 self-center mt-8 px-9 py-5">
+  Подписаться на YouTube
+</a>
         </div>
       </div>
     </div>
@@ -348,59 +380,5 @@ https://www.t.me/real_estate_al" target="_blank" > <svg width="40" height="40" v
 </body>
 
 <script src="./index.js" type="module"></script>
-<script>
-    const translations = {
-      en: {
-        tourTitle: 'Investment Tour to Albania',
-        tourSubtitle: 'Free introductory tour of real estate in Albania',
-        item1Title: '01. Tour up to 5 days',
-        item1Desc: 'City tours and walks',
-        item2Title: '02. Convenient dates for you',
-        item3Title: '03. Meeting at the airport',
-        item4Title: '04. Transfer airport/hotel/airport',
-        item4Desc: 'Consultation on real estate transaction',
-        item5Title: '05. Accommodation in comfortable apartments',
-        item5Desc: 'Opening a bank account',
-        item6Title: '06. Inspection of the best real estate objects for your goals',
-        item6Desc: 'Lawyer services',
-      },
-      ru: {
-        tourTitle: 'Инвестиционный тур в Албанию',
-        tourSubtitle: 'Бесплатный ознакомительный тур по недвижимости в Албании',
-        item1Title: '01. Тур до 5 дней',
-        item1Desc: 'Экскурсии и прогулки по городу',
-        item2Title: '02. Удобные для Вас даты',
-        item3Title: '03. Встреча в аэропорту',
-        item4Title: '04. Трансфер аэропорт/отель/аэропорт',
-        item4Desc: 'Консультация по оформлению сделки по недвижимости',
-        item5Title: '05. Размещение в комфортных апартаментах',
-        item5Desc: 'Открытие банковского счета',
-        item6Title: '06. Осмотр лучших объектов недвижимости под ваши цели',
-        item6Desc: 'Услуги адвоката, Получение вида на жительство',
-      },
-      pl: {
-        tourTitle: 'Inwestycyjna wycieczka do Albanii',
-        tourSubtitle: 'Darmowa wstępna wycieczka po nieruchomościach w Albanii',
-        item1Title: '01. Wycieczka do 5 dni',
-        item1Desc: 'Zwiedzanie miasta i spacery',
-        item2Title: '02. Wygodne dla Ciebie daty',
-        item3Title: '03. Spotkanie na lotnisku',
-        item4Title: '04. Transfer lotnisko/hotel/lotnisko',
-        item4Desc: 'Konsultacje dotyczące transakcji nieruchomościowej',
-        item5Title: '05. Zakwaterowanie w komfortowych apartamentach',
-        item5Desc: 'Otwarcie konta bankowego',
-        item6Title: '06. Oglądanie najlepszych obiektów nieruchomości pod Twoje cele',
-        item6Desc: 'Usługi prawnika, Uzyskanie zezwolenia na pobyt stały',
-      },
-    };
 
-    function changeLanguage(lang) {
-      for (const key in translations[lang]) {
-        const element = document.getElementById(key);
-        if (element) {
-          element.innerText = translations[lang][key];
-        }
-      }
-    }
-  </script>
 </html>

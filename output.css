@@ -264,6 +264,14 @@
   top: -1px;
 }
 
+.top-0{
+  top: 0px;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -286,6 +294,10 @@
 
 .z-30{
   z-index: 30;
+}
+
+.z-40{
+  z-index: 40;
 }
 
 .float-start{
@@ -585,6 +597,19 @@
   height: 100vh;
 }
 
+.h-4{
+  height: 1rem;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.h-min{
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .w-5{
   width: 1.25rem;
 }
@@ -640,6 +665,34 @@
 
 .w-screen{
   width: 100vw;
+}
+
+.w-\[68px\]{
+  width: 68px;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-7{
+  width: 1.75rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .max-w-72{
