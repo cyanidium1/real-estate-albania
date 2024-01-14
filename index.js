@@ -131,8 +131,85 @@ function changeLanguage(lang) {
 let currentLanguage = "ru";
 updateContent(currentLanguage);
 
+
+const content3 = {
+  ru: {
+    tourTitle: "Инвестиционный тур в Албанию",
+    tourSubtitle: "Бесплатный ознакомительный тур по недвижимости в Албании",
+    item1Title: "Тур до 5 дней",
+    item1Desc: "Экскурсии и прогулки по городу",
+    item1Desc2: "Осмотр школ и университетов",
+    item2Title: "Удобные для Вас даты",
+    item3Title: "Встреча в аэропорту",
+    item4Title: "Трансфер аэропорт/отель/аэропорт",
+    item4Desc: "Консультация по оформлению сделки по недвижимости",
+    item5Title: "Размещение в комфортных апартаментах",
+    item5Desc: "Открытие банковского счета",
+    item6Title: "Осмотр лучших объектов недвижимости под ваши цели",
+    item6Desc: "Услуги адвоката",
+    item6Desc2: "Получение вида на жительство",
+  },
+  eng: {
+    tourTitle: "Investment tour to Albania",
+    tourSubtitle: "Free introductory tour of real estate in Albania",
+    item1Title: "Tour up to 5 days",
+    item1Desc: "City tours and walks",
+    item1Desc2: "Visiting schools and universities",
+    item2Title: "Convenient dates for you",
+    item3Title: "Meeting at the airport",
+    item4Title: "Transfer airport/hotel/airport",
+    item4Desc: "Consultation on real estate transaction",
+    item5Title: "Accommodation in comfortable apartments",
+    item5Desc: "Opening a bank account",
+    item6Title: "Viewing the best real estate for your goals",
+    item6Desc: "Services of a lawyer",
+    item6Desc2: "Residence permit issuance",
+  },
+  pl: {
+    tourTitle: "Wycieczka inwestycyjna do Albanii",
+    tourSubtitle: "Darmowa wstępna wycieczka po nieruchomościach w Albanii",
+    item1Title: "Wycieczka do 5 dni",
+    item1Desc: "Zwiedzanie miasta i spacery",
+    item1Desc2: "Oglądanie szkół i uniwersytetów",
+    item2Title: "Dogodne dla Ciebie daty",
+    item3Title: "Spotkanie na lotnisku",
+    item4Title: "Transfer lotnisko/hotel/lotnisko",
+    item4Desc: "Konsultacje dotyczące transakcji z nieruchomościami",
+    item5Title: "Zakwaterowanie w komfortowych apartamentach",
+    item5Desc: "Otwarcie konta bankowego",
+    item6Title: "Oglądanie najlepszych nieruchomości pod Twoje cele",
+    item6Desc: "Usługi prawnika",
+    item6Desc2: "Wydanie zezwolenia na pobyt",
+  },
+};
+
+ const translatorSelect = document.getElementById("translator");
+
+ translatorSelect.addEventListener("change", function () {
+   const selectedLanguage = translatorSelect.value;
+   translatePage(selectedLanguage);
+ });
+
+ function translatePage(language) {
+   const elements = document.querySelectorAll("[id]");
+   elements.forEach((element) => {
+     const translationKey = element.id;
+     if (content3[language] && content3[language][translationKey]) {
+       element.textContent = content3[language][translationKey];
+     }
+   });
+ }
+
+ // Инициализация страницы с текущим языком (по умолчанию - русский)
+ translatePage("ru");
+
+
+
+
+
 document.getElementById("translator").addEventListener("change", function () {
   currentLanguage = this.value;
   updateContent(currentLanguage);
-  changeLanguage(currentLanguage);
+    changeLanguage(currentLanguage);
+    translatePage(currentLanguage);
 });
