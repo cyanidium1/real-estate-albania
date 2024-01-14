@@ -368,59 +368,7 @@ https://www.t.me/real_estate_al" target="_blank" > <svg width="40" height="40" v
     </div>
   </footer>
 </body>
-<script>
-  const content = {
-    eng: {
-      title: "REAL ESTATE IN ALBANIA",
-      description: "Purchase property by the sea and get a residence permit!",
-      buttonText: "Get a property selection",
-      items: [
-        "Assistance in selecting and buying real estate",
-        "Repairs and furnishing",
-        "Rent and management of your property"
-      ]
-    },
-    pl: {
-      title: "NIERUCHOMOŚCI W ALBANII",
-      description: "Kup nieruchomość nad morzem i uzyskaj pozwolenie na zamieszkanie!",
-      buttonText: "Otrzymaj wybór nieruchomości",
-      items: [
-        "Pomoc w wyborze i zakupie nieruchomości",
-        "Remonty i umeblowanie",
-        "Wynajem i zarządzanie Twoją nieruchomością"
-      ]
-    },
-    ru: {
-      title: "НЕДВИЖИМОСТЬ В АЛБАНИИ",
-      description: "Приобретите недвижимость у моря и получите Вид на жительство!",
-      buttonText: "Получить подбор недвижимости",
-      items: [
-        "Помощь в подборе и покупке недвижимости",
-        "Ремонт и меблировка",
-        "Аренда и управление вашей недвижимостью"
-      ]
-    }
-  };
 
-  function updateContent(language) {
-    const langContent = content[language];
-
-    document.getElementById("title1").textContent = langContent.title;
-    document.getElementById("description1").textContent = langContent.description;
-    document.getElementById("button1").textContent = langContent.buttonText;
-
-    const itemsList = document.getElementById("items1");
-    itemsList.innerHTML = langContent.items.map(item => `<li>${item}</li>`).join('');
-  }
-
-  let currentLanguage = "ru";
-  updateContent(currentLanguage);
-
-  document.getElementById("translator").addEventListener("change", function () {
-    currentLanguage = this.value;
-    updateContent(currentLanguage);
-  });
-</script>
 <script src="./index.js" type="module"></script>
 
 </html>
