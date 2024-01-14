@@ -248,10 +248,6 @@
   right: 0px;
 }
 
-.top-0{
-  top: 0px;
-}
-
 .top-1\/2{
   top: 50%;
 }
@@ -266,10 +262,6 @@
 
 .top-\[-1px\]{
   top: -1px;
-}
-
-.bottom-0{
-  bottom: 0px;
 }
 
 .isolate{
@@ -340,10 +332,6 @@
   clear: none;
 }
 
-.m-0{
-  margin: 0px;
-}
-
 .m-1{
   margin: 0.25rem;
 }
@@ -389,6 +377,10 @@
   margin-bottom: 1.25rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -419,10 +411,6 @@
 
 .mt-9{
   margin-top: 2.25rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .box-border{
@@ -593,10 +581,6 @@
   height: 100vh;
 }
 
-.max-h-96{
-  max-height: 24rem;
-}
-
 .w-5{
   width: 1.25rem;
 }
@@ -660,22 +644,6 @@
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-96{
-  max-width: 24rem;
-}
-
-.max-w-lg{
-  max-width: 32rem;
-}
-
-.max-w-1{
-  max-width: 0.25rem;
-}
-
-.max-w-1\.5{
-  max-width: 0.375rem;
 }
 
 .flex-shrink{
@@ -1702,6 +1670,11 @@
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
+.bg-slate-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -1709,11 +1682,6 @@
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20{
@@ -1731,12 +1699,6 @@
 .from-\[\#7ba5d3\]{
   --tw-gradient-from: #7ba5d3 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(123 165 211 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#9FD8D8\]{
-  --tw-gradient-from: #9FD8D8 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(159 216 216 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1905,11 +1867,6 @@
   padding-right: 4rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1930,6 +1887,11 @@
   padding-right: 1.25rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-9{
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -1938,11 +1900,6 @@
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-10{
@@ -1973,11 +1930,6 @@
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pl-2{
@@ -2054,16 +2006,6 @@
 
 .text-xs{
   font-size: 12px;
-}
-
-.text-xs\/\[8px\]{
-  font-size: 12px;
-  line-height: 8px;
-}
-
-.text-xs\/\[8\]{
-  font-size: 12px;
-  line-height: 8;
 }
 
 .font-bold{
@@ -2160,11 +2102,6 @@
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-500{
