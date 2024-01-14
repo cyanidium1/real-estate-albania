@@ -336,6 +336,10 @@
   margin: 0.25rem;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -1684,6 +1688,21 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-pink-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(157 23 77 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
 }
@@ -2488,7 +2507,7 @@
 body{
   margin: 0px;
   line-height: normal;
-  font-family: 'Rokkitt', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   overflow-x: hidden;
 }
