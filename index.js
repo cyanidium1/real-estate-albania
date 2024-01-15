@@ -365,3 +365,7 @@ document.getElementById("translator").addEventListener("change", function () {
     changeFlag(currentLanguage);
 
 });
+
+
+
+

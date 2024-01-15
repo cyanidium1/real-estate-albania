@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B&S Trust2</title>
+    <title>Опросник</title>
+
     <link href="/output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,65 +15,275 @@
       href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
   </head>
-<body>
-      <section class="w-screen h-screen" >
+  <body>
+    <section class="w-screen h-screen">
       <div class="h-[680px] relative">
         <!-- Бекграунд -->
-     
-        <div  class="absolute w-full h-full z-0" style="
+
+        <div
+          class="absolute w-full h-full z-0"
+          style="
             background-image: url('./public/images/bg-Question.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-          "></div>
-        <!-- Градиент -->
-        <!-- <div
-          class="top-[-1px] absolute inset-0 bg-gradient-to-b from-[#FDFAEC] to-transparent h-1/4"
-        ></div> -->
+          "
+        ></div>
+
         <!-- Контент -->
-        <div
-          class=" flex justify-center items-center w-full h-full "
-        >
+
+        <div class="flex justify-center items-center w-full h-full">
           <div
             class="relative bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm flex flex-col px-4 py-8 rounded-md items-center max-w-358px max-h-415px"
           >
-            
-    
-
-           <ul class="flex flex-col gap-4 mb-6">
-          <li class="w-fit  self-start mb-6 bg-white rounded-3xl p-2 z-20 font-semibold">
-           Какая цель покупки недвижимости?
-          </li>
-          <li class="w-fit  self-start bg-white rounded-3xl p-2 z-20">
-            для проживания и получения ВНЖ
-          </li>
-          <li class="w-fit  self-start bg-white rounded-3xl p-2 z-20">
-            для сезонного отдыха
-          </li>
-          <li class="w-fit  self-start bg-white rounded-3xl p-2 z-20">
-            Доход в виде аренды
-          </li>
-          <li class="w-fit  self-start bg-white rounded-3xl p-2 z-20">
-            Другие цели
-          </li>
-        </ul>
-        <span class="mb-6 text-xs font-normal">1/8</span>
-      <div class="flex flex-row justify-between gap-4 "><a
-              href="/"
-              class="text-white no-underline rounded bg-slate-700   px-8 py-3"
-            >
-              Назад
-            </a>
-            <a
-              href="/"
-              class=" text-white no-underline rounded bg-sky-950  px-8 py-3"
-            >
-              Далее
-            </a></div>  
+            <div class="flex flex-col gap-4 mb-6" id="question-container"></div>
+            <p id="page" class="mb-6 text-xs font-normal">1/8</p>
+            <div class="flex flex-row justify-between gap-4">
+              <button
+                class="text-white no-underline rounded bg-slate-700 px-8 py-3"
+                id="prev-btn"
+                onclick="prevQuestion()"
+                disabled
+              >
+                Назад
+              </button>
+              <button
+                class="text-white no-underline rounded bg-sky-950 px-8 py-3"
+                id="next-btn"
+                onclick="nextQuestion()"
+                disabled
+              >
+                Далее
+              </button>
+              <button
+                class="text-white no-underline rounded bg-emerald-900 px-8 py-3"
+                id="next-btn"
+                onclick="submitAnswers()"
+              >
+                Посмотреть ответы
+              </button>
+            </div>
+            <div id="answers-container"></div>
           </div>
         </div>
       </div>
     </section>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+
+    </script>
+    <script>
+      const questions = [
+        {
+          question: "Какая цель покупки недвижимости?",
+          options: [
+            "для проживания и получения ВНЖ",
+            "для сезонного отдыха",
+            "Доход в виде аренды",
+            "Другие цели",
+          ],
+        },
+        {
+          question: "Укажите желаемый бюджет для инвестиций в USD",
+          options: ["30-50 000€", "50-80 000€", "Более 80 000€"],
+        },
+        {
+          question: "Какой тип недвижимости Вас интересует?",
+          options: ["Апартаменты", "Вилла", "Таунхаус", "Коммерция"],
+        },
+        {
+          question: "Есть ли предпочтения по сроку сдачи?",
+          options: [
+            "Вторичный рынок",
+            "Построен и сдан",
+            "Сдача в этом году",
+            "Сдача в ближайшие 3-5 лет",
+          ],
+        },
+        {
+          question: "Вариант оплаты",
+          options: [
+            "Полная оплата",
+            "Беспроцентная рассрочка",
+            "Оплата криптовалютой",
+          ],
+        },
+        {
+          question: "Ваше имя",
+          options: [""],
+        },
+        {
+          question: "Полный номер телефона",
+          options: [""],
+        },
+        {
+          question: "Выберите удобный мессенджер для получения информации",
+          options: ["WhatsApp", "Telegram", "Viber"],
+        },
+      ];
+
+      let currentQuestionIndex = 0;
+      const answers = {};
+
+      function renderQuestion() {
+        if (currentQuestionIndex > 7) {
+          // Если вопрос после 8, скрываем кнопки "Далее" и "Назад"
+          document.getElementById("next-btn").style.display = "none";
+          document.getElementById("prev-btn").style.display = "none";
+          document.getElementById("page").style.display = "none";
+        }
+
+        const questionContainer = document.getElementById("question-container");
+        questionContainer.innerHTML = "";
+
+        const currentQuestion = questions[currentQuestionIndex];
+
+        const questionElement = document.createElement("p");
+        questionElement.classList.add(
+          "w-fit",
+          "self-start",
+          "mb-6",
+          "bg-white",
+          "rounded-3xl",
+          "p-2",
+          "z-20",
+          "font-semibold"
+        );
+        questionElement.textContent = currentQuestion.question;
+        questionContainer.appendChild(questionElement);
+
+        if (currentQuestionIndex === 5) {
+          // Добавим текстовое поле для 6 вопроса
+
+          const inputElement6 = document.createElement("input");
+
+          inputElement6.classList.add(
+            "w-fit",
+            "self-start",
+            "mb-6",
+            "bg-white",
+            "rounded-3xl",
+            "p-2",
+            "z-20",
+            "font-semibold"
+          );
+          inputElement6.type = "text";
+          inputElement6.id = "name";
+          inputElement6.value = answers[currentQuestionIndex] || "";
+          inputElement6.addEventListener("input", () =>
+            handleTextInputChange(inputElement6.value)
+          );
+          questionContainer.appendChild(inputElement6);
+        }
+
+        if (currentQuestionIndex === 6) {
+          // Добавим текстовое поле для 7 вопроса
+          const inputElement7 = document.createElement("input");
+          //   inputElement7.classList.add('w-fit', 'self-start', 'mb-6', 'bg-white', 'rounded-3xl', 'p-2', 'z-20', 'font-semibold');
+
+          inputElement7.type = "number";
+          inputElement7.id = "phone";
+          inputElement7.value = answers[currentQuestionIndex] || "";
+          inputElement7.addEventListener("input", () =>
+            handleTextInputChange(inputElement7.value)
+          );
+          page.textContent = `${currentQuestionIndex + 1}/8`;
+          questionContainer.appendChild(inputElement7);
+
+          window.intlTelInput(inputElement7, {
+            utilsScript:
+              "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+          });
+        } else {
+          // Добавим радио-кнопки для остальных вопросов
+          const optionsElement = document.createElement("ul");
+          const page = document.getElementById("page");
+          page.textContent = `${currentQuestionIndex + 1}/8`;
+          currentQuestion.options.forEach((option, index) => {
+            const optionElement = document.createElement("li");
+            optionElement.classList.add(
+              "w-fit",
+              "self-start",
+              "mb-6",
+              "bg-white",
+              "rounded-3xl",
+              "p-2",
+              "z-20",
+              "font-semibold"
+            );
+            const inputElement = document.createElement("input");
+            optionElement.classList.add("mr-5");
+            inputElement.type = "radio";
+            inputElement.name = "option";
+            inputElement.value = option;
+            inputElement.addEventListener("change", () =>
+              handleOptionChange(index)
+            );
+            optionElement.appendChild(inputElement);
+            optionElement.appendChild(document.createTextNode(option));
+            optionsElement.appendChild(optionElement);
+          });
+          questionContainer.appendChild(optionsElement);
+        }
+
+        // Обновим состояние кнопок "Далее" и "Назад"
+        document.getElementById("next-btn").disabled =
+          !answers[currentQuestionIndex];
+        document.getElementById("prev-btn").disabled =
+          currentQuestionIndex === 0;
+      }
+
+      function handleOptionChange(optionIndex) {
+        answers[currentQuestionIndex] =
+          questions[currentQuestionIndex].options[optionIndex];
+        document.getElementById("next-btn").disabled = false;
+      }
+
+      function handleTextInputChange(value) {
+        answers[currentQuestionIndex] = value;
+        document.getElementById("next-btn").disabled = !value;
+      }
+
+      function nextQuestion() {
+        currentQuestionIndex++;
+        renderQuestion();
+      }
+
+      function prevQuestion() {
+        // Добавим проверку на наличие предыдущего вопроса перед переходом
+        if (currentQuestionIndex > 0) {
+          // Удалим последний ответ перед переходом
+          delete answers[currentQuestionIndex];
+          currentQuestionIndex--;
+          renderQuestion();
+        }
+      }
+
+      function renderAnswers() {
+        const answersContainer = document.getElementById("answers-container");
+        answersContainer.innerHTML = "<h3>Ответы:</h3>";
+
+        Object.entries(answers).forEach(([questionIndex, answer]) => {
+          const question = questions[questionIndex];
+          const answerElement = document.createElement("p");
+          answerElement.textContent = `${question.question}: ${answer}`;
+          answersContainer.appendChild(answerElement);
+        });
+      }
+
+      function submitAnswers() {
+        // Ваша логика отправки ответов
+        renderAnswers();
+      }
+
+      // Начать опрос с первого вопроса
+      renderQuestion();
+    </script>
+  </body>
 </html>
